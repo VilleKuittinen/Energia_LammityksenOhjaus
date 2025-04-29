@@ -1,0 +1,37 @@
+# --- Energia* Node-RED projektin .gitignore ---
+
+# Node.js / npm
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Node-REDin omat tiedostot
+flows_cred.json         # Salasanoja sisältävä tiedosto, älä koskaan jaa
+flows_*.json.backup     # Node-REDin varmuuskopiot
+*.backup
+*.tmp
+
+# CSV-tiedostot (historiatiedot, virhelokit)
+*.csv
+
+# Lokitiedostot
+*.log
+
+# .env-tiedostot (esimerkiksi salaiset API-avaimet)
+.env
+
+# Käyttäjän omat muistiinpanot tai väliaikaiset tiedostot
+notes.txt
+*.bak
+*.old
+
+# VSCode (tai muiden editorien) automaattikansiot
+.vscode/
+.idea/
+
+# Macin ja Windowsin järjestelmätiedostot
+.DS_Store
+Thumbs.db
+
+# Gitin oma tiedosto
+.gitignore
