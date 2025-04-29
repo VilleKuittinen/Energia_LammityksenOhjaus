@@ -1,12 +1,6 @@
 Energia* on Karelia-ammattikorkeakoulun Älykkäät energiayhteisöt -hankkeen tuottama lämmityksen ohjausjärjestelmä.
 
-Lisenssi
-Tämä Node-RED -kokonaisuus ja siihen liittyvät koodit on julkaistu MIT-lisenssillä.
-- Saa käyttää vapaasti kaupallisesti ja ei-kaupallisesti
-- Saa muokata ja jakaa edelleen
-- Ei takuita toimivuudesta
-- Tekijä (alkuperäinen lähde) on mainittava: Copyright © 2025 [Ville Kuittinen / Karelia-ammattikorkeakoulu]
-
+© 2025 Ville Kuittinen/Karelia-ammattikorkeakoulu - MIT License - https://opensource.org/licenses/MIT
 
 Tervetuloa käyttämään Energia* järjestelmää. Tämä dokumentti kertoo, mitä tarvitaan ja miten saat kaiken toimimaan Node-RED:issä.
 A. Node-RED Asennus
