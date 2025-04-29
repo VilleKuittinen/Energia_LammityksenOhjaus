@@ -1,0 +1,2206 @@
+[
+    {
+        "id": "db8599dd04e50dd0",
+        "type": "tab",
+        "label": "Ohjauslogiikka",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e3d79ada6156224f",
+        "type": "tab",
+        "label": "UI",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9bef5ea1018b804f",
+        "type": "tab",
+        "label": "Tilatiedot",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8b1e03744ce83889",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#26a269",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#26a269",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#26a269",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#42d390",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#26a269",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Botanian lämmityksen ohjaus / Karelia-amk Energia*",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "bddf15fa02acb097",
+        "type": "ui_tab",
+        "name": "Ohjaus",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "fb0332b9eab4a6d1",
+        "type": "ui_group",
+        "name": "Hinnat",
+        "tab": "bddf15fa02acb097",
+        "order": 1,
+        "disp": false,
+        "width": "9",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "20b69aeedb8eda52",
+        "type": "ui_group",
+        "name": "Säädöt",
+        "tab": "bddf15fa02acb097",
+        "order": 3,
+        "disp": false,
+        "width": 14,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f690cc5791641bf3",
+        "type": "ui_group",
+        "name": "Tekstit",
+        "tab": "bddf15fa02acb097",
+        "order": 2,
+        "disp": false,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "254cb305668c1676",
+        "type": "ui_spacer",
+        "z": "e3d79ada6156224f",
+        "name": "spacer",
+        "group": "fb0332b9eab4a6d1",
+        "order": 2,
+        "width": "9",
+        "height": "1"
+    },
+    {
+        "id": "8e6ea77f57d43665",
+        "type": "ui_spacer",
+        "z": "e3d79ada6156224f",
+        "name": "spacer",
+        "group": "f690cc5791641bf3",
+        "order": 4,
+        "width": "8",
+        "height": "1"
+    },
+    {
+        "id": "6e4b1f2df174f6a4",
+        "type": "ui_spacer",
+        "z": "9bef5ea1018b804f",
+        "name": "spacer",
+        "group": "f690cc5791641bf3",
+        "order": 2,
+        "width": "8",
+        "height": "2"
+    },
+    {
+        "id": "a5b13ce00222c248",
+        "type": "ui_tab",
+        "name": "3 vrk Kuvaaja",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "53d8aa653a49137f",
+        "type": "ui_group",
+        "name": "3d kuvaaja",
+        "tab": "a5b13ce00222c248",
+        "order": 1,
+        "disp": false,
+        "width": "30",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a99aa179153f3876",
+        "type": "ui_tab",
+        "name": "10h kuvaaja",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "3a59070452a44f08",
+        "type": "ui_group",
+        "name": "10h kuvaaja",
+        "tab": "a99aa179153f3876",
+        "order": 1,
+        "disp": false,
+        "width": "30",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4414b947e9b27604",
+        "type": "ui_spacer",
+        "z": "e3d79ada6156224f",
+        "name": "spacer",
+        "group": "20b69aeedb8eda52",
+        "order": 7,
+        "width": "14",
+        "height": "2"
+    },
+    {
+        "id": "f4d639d517235b91",
+        "type": "ui_spacer",
+        "z": "e3d79ada6156224f",
+        "name": "spacer",
+        "group": "20b69aeedb8eda52",
+        "order": 9,
+        "width": "14",
+        "height": "1"
+    },
+    {
+        "id": "725080816921266a",
+        "type": "ui_spacer",
+        "z": "e3d79ada6156224f",
+        "name": "spacer",
+        "group": "20b69aeedb8eda52",
+        "order": 2,
+        "width": "14",
+        "height": "1"
+    },
+    {
+        "id": "eb137ebe4ab4bec8",
+        "type": "shelly-gen2",
+        "z": "db8599dd04e50dd0",
+        "d": true,
+        "hostname": "192.168.xxx.xxx",
+        "description": "Dimmer/Ohjaus",
+        "mode": "polling",
+        "verbose": false,
+        "server": "",
+        "outputmode": "event",
+        "uploadretryinterval": "5000",
+        "pollinginterval": 5000,
+        "pollstatus": false,
+        "getstatusoncommand": false,
+        "devicetype": "S3DM-0010WW",
+        "devicetypemustmatchexactly": false,
+        "captureblutooth": false,
+        "outputs": 1,
+        "x": 900,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5beb8be008c356f5",
+        "type": "inject",
+        "z": "db8599dd04e50dd0",
+        "d": true,
+        "name": "Ohjaus / 1min",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 280,
+        "wires": [
+            [
+                "0b125842cfcfea29"
+            ]
+        ]
+    },
+    {
+        "id": "09790657aa7410df",
+        "type": "inject",
+        "z": "db8599dd04e50dd0",
+        "d": true,
+        "name": "Klo 15",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 15 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 140,
+        "wires": [
+            [
+                "448fb7bb03107988"
+            ]
+        ]
+    },
+    {
+        "id": "3c096041af500808",
+        "type": "file",
+        "z": "db8599dd04e50dd0",
+        "name": "",
+        "filename": "Ohjausdata_analysointiin.jsonl",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "utf8",
+        "x": 950,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "99c87bb679670d1b",
+        "type": "xml",
+        "z": "db8599dd04e50dd0",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 630,
+        "y": 140,
+        "wires": [
+            [
+                "932be661209afc6c"
+            ]
+        ]
+    },
+    {
+        "id": "fb51f60438f84132",
+        "type": "comment",
+        "z": "db8599dd04e50dd0",
+        "name": "Virheiden keräys ja tallennus",
+        "info": "",
+        "x": 180,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "258d3465c6dee98f",
+        "type": "file",
+        "z": "db8599dd04e50dd0",
+        "name": "",
+        "filename": "Hintatiedot_historia.csv",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1110,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "932be661209afc6c",
+        "type": "function",
+        "z": "db8599dd04e50dd0",
+        "name": "Halvimpien tuntien valinta",
+        "func": "/**\n * © 2025 Ville Kuittinen/Karelia-ammattikorkeakoulu - MIT License - https://opensource.org/licenses/MIT\n * \n * Tämä solmu käsittelee ENTSO-E:n raakadataa ja muodostaa hintatiedot.\n * \n * 1. Tarkistetaan syötteen sisältö (Publication_MarketDocument).\n * 2. Poimitaan hintasarja (TimeSeries) ja periodi (Period).\n * 3. Muunnetaan aikavälin alku- ja loppuaika Helsingin paikallisaikaan.\n * 4. Määritetään resoluutio (oletuksena 1h tai 30min).\n * 5. Rakennetaan hinnat taulukko: jokaiselle pisteelle lasketaan tarkka aikaleima.\n * 6. Täydennetään puuttuvat tunnit tarvittaessa edellisellä hinnalla.\n * 7. Yhdistetään uudet hinnat aiemmin tallennettuun hintadataan (global \"hinnat\").\n * 8. Poistetaan duplikaatit ja yli 24 tuntia vanhat tiedot.\n * 9. Lajitellaan hinnat aikajärjestykseen.\n * 10. Tallennetaan päivitetyt hinnat globaaliin muuttujaan ja palautetaan CSV-muotoisena.\n */\n\nconst moment = global.get('moment');\n\n// --- 1. Syötteen tarkistus ---\nif (!msg.payload || !msg.payload.Publication_MarketDocument) {\n    node.error(\"Publication_MarketDocument puuttuu syötteestä\", msg);\n    return null;\n}\n\nconst publication = msg.payload.Publication_MarketDocument;\n\n// --- 2. Hintasarjan ja periodin poiminta ---\nif (!publication.TimeSeries || publication.TimeSeries.length === 0) {\n    node.error(\"TimeSeries puuttuu syötteestä\", msg);\n    return null;\n}\nconst ts = publication.TimeSeries[0];\n\nif (!ts.Period || ts.Period.length === 0) {\n    node.error(\"Period puuttuu syötteestä\", msg);\n    return null;\n}\nconst period = ts.Period[0];\n\nif (!period.timeInterval || period.timeInterval.length === 0) {\n    node.error(\"timeInterval puuttuu syötteestä\", msg);\n    return null;\n}\nconst periodStartStr = period.timeInterval[0].start[0];\nconst periodEndStr = period.timeInterval[0].end[0];\n\n// --- 3. Aikavälin muunto Helsingin aikaan ---\nlet periodStart = moment(periodStartStr).tz(\"Europe/Helsinki\");\nlet periodEnd = moment(periodEndStr).tz(\"Europe/Helsinki\");\n\n// --- 4. Resoluutio ---\nlet resolution = period.resolution ? period.resolution[0] : \"PT60M\";\nlet hoursIncrement = (resolution === \"PT30M\") ? 0.5 : 1;\n\n// --- 5. Hintapisteiden käsittely ---\nif (!period.Point || period.Point.length === 0) {\n    node.error(\"Hintapisteitä ei löytynyt\", msg);\n    return null;\n}\nconst points = period.Point;\n\nlet prices = [];\nfor (let i = 0; i < points.length; i++) {\n    let pos = parseInt(points[i].position[0], 10);\n    let pointTime = periodStart.clone().add(pos - 1, 'hours');\n    let price = parseFloat(points[i][\"price.amount\"][0]);\n    prices.push({\n        timestamp: pointTime.toISOString(),\n        price: price\n    });\n}\n\n// --- 6. Puuttuvien tuntien täyttäminen ---\nlet expectedCount = periodEnd.diff(periodStart, 'hours');\nlet filledPrices = [];\nlet currentTime = periodStart.clone();\nlet index = 0;\n\nwhile (filledPrices.length < expectedCount) {\n    let isoTime = currentTime.toISOString();\n    if (index < prices.length && prices[index].timestamp === isoTime) {\n        filledPrices.push(prices[index]);\n        index++;\n    } else {\n        filledPrices.push({\n            timestamp: isoTime,\n            price: (prices.length > 0) ? prices[prices.length - 1].price : 0\n        });\n    }\n    currentTime.add(1, 'hour');\n}\n\n// --- 7. Yhdistäminen olemassa olevaan hintadataan ---\nlet existingPrices = global.get(\"hinnat\", \"file\") || [];\nlet mergedPrices = existingPrices.concat(filledPrices);\n\n// --- 8. Duplikaattien ja vanhojen tietojen poisto ---\nmergedPrices = mergedPrices.filter((entry, index, self) =>\n    index === self.findIndex(e => e.timestamp === entry.timestamp)\n);\n\nlet thresholdTime = Date.now() - (24 * 60 * 60 * 1000);\nmergedPrices = mergedPrices.filter(entry => new Date(entry.timestamp).getTime() >= thresholdTime);\n\n// --- 9. Lajittelu aikajärjestykseen ---\nmergedPrices.sort((a, b) => new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime());\n\n// --- 10. Tallennus ja CSV-muodon valmistaminen ---\nglobal.set(\"hinnat\", mergedPrices, \"file\");\n\nlet csvRows = mergedPrices.map(entry => `${entry.timestamp},${entry.price.toFixed(2)}`);\nmsg.payload = csvRows.join(\"\\n\");\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 140,
+        "wires": [
+            [
+                "258d3465c6dee98f",
+                "55b70afc5f17df2a"
+            ]
+        ]
+    },
+    {
+        "id": "ec5381f93594c318",
+        "type": "comment",
+        "z": "db8599dd04e50dd0",
+        "name": "Hintojen nouto, käsittely",
+        "info": "",
+        "x": 170,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "70c74fedcbabb1fd",
+        "type": "function",
+        "z": "db8599dd04e50dd0",
+        "name": "Kattilan ohjauslogiikka",
+        "func": "/**\n * © 2025 Ville Kuittinen/Karelia-ammattikorkeakoulu - MIT License - https://opensource.org/licenses/MIT\n * \n * Lämmityksen ohjauslogiikka on tehty järjestelmään jossa kasvihuoneen lämmityksessä käytetään \n * 0-10V ohjattua sähkökattilaa, kuten esim. Jäspi FIL-SPL. Ohjauksessa ja tiedon keruussa käytetään Shelly laitteita.\n * \n * Logiikassa on huomioitu sähkön hinnanvaihtelut, varaajan lämpötilan rajoitukset, kattilan ylikuumenemisen estäminen \n * sekä optimaalinen energiankäyttö. Kaikki kytkennät perustuvat reaaliaikaiseen mittausdataan ja säädettyihin raja-arvoihin.\n * \n * Tehtävät:\n *\n * 1. Globaali muuttujien ja mittaustietojen alustaminen\n *    - Noudetaan sisä-, ulko- ja varaajan lämpötilat sekä aiemmat ohjaukset\n *\n * 2. Ajan ja sähkön hintatietojen käsittely\n *    - Haetaan nykyinen kellonaika, sähkön hinta ja luokitus\n *    - Tarkistetaan kuuluuko nykyhetki halpoihin tunteihin\n *\n * 3. Lämmityspäätöksen muodostaminen\n *    - Lämmitys päälle/alemmas ylä- ja alarajojen, sähkön hinnan ja kattilan tilan mukaan\n *    - Vikasuoja liian korkealle lämpötilalle\n *\n * 4. Hysteresis-logiikka (turhien kytkentöjen estäminen)\n *    - OFF → ON: Jatketaan lämmitystä hystereesivyöhykkeellä\n *    - ON → OFF: Estetään sammuttaminen liian herkästi\n *\n * 5. Lämpötilatrendit ja ennakoiva lämmitys\n *    - Tallennetaan sisälämpötilan muutokset\n *    - Ennakoidaan lämpötilan lasku iltaisin\n *    - Estetään turhia lämmityksiä korkean lämpötilan aikana\n *\n * 6. Kattilan nousunopeuden tarkkailu\n *    - Estetään ylikuumeneminen seuraamalla kattilalämpötilan nopeaa nousua\n *\n * 7. Päätösten viivehallinta\n *    - Varmistetaan riittävät odotusajat päätösten välillä\n *    - Pakotetaan uusi komento, jos laitteisto ei reagoi\n *\n * 8. Lokitietojen muodostaminen\n *    - Tallennetaan kaikki oleelliset tiedot päätöksenteosta ja mittauksista\n *    - Lähetetään rakenteellinen tieto UI:lle ja JSON-lokiin\n *\n * 9. Lämmityskäskyn lähettäminen\n *    - Komento Shelly-dimmerille lähetetään vain, jos teho muuttuu tai riittävä aika on kulunut\n *\n */\n\n\n// 1. GLOBAALIEN MUUTTUJIEN JA MITTAUSARVOJEN ALUSTAMINEN\n// Haetaan käyttöön kaikki tarvittavat mittausarvot ja aiemmat ohjaukset globaalista tiedostosta.\n// - Laitteiden mittaukset kuten indoorTemp, outdoorTemp, varaajaAla\n// - Käyttäjän antamat halvan ja kalliin sähkön hinnat ja erikseen valitut halvat tunnit\n// - Edelliset ohjauskäskyt ja päätökset (esim. lastDimmerCommand)\n\nconst lastDimmerCommand = global.get(\"lastDimmerCommand\", \"file\") || { haluttuTeho: null, timestamp: 0 };\nconst commandCooldown = global.get(\"commandCooldown\", \"file\") || 60000; // Komentojen välinen minimiaika (ms), oletus 1 minuutti\nconst hinnat = global.get(\"hinnat\", \"file\") || []; // Ennustetut sähkön hinnat\nconst cheapestHours = global.get(\"halvat\", \"file\") || []; // Valmiiksi valitut halvimmat tunnit\nconst selectedHours = global.get(\"selectedHours\", \"file\") || 0; // Halpojen tuntien määrä\nconst actualBoilerStatus = global.get(\"actualBoilerStatus\", \"file\") || 0; // Kattilan toteutunut teho (%)\nconst pvProduction = global.get(\"pvProduction\", \"file\") || 0; // Aurinkosähkön tuotanto kW\nlet indoorTemp = global.get(\"indoorTemp\", \"file\"); // Sisälämpötila, päätason arvo\nif (indoorTemp === null || indoorTemp === undefined) {\n    indoorTemp = global.get(\"sisalampotila2\", \"file\"); // Varalähde jos pääarvo puuttuu\n}\nconst outdoorTemp = global.get(\"outdoorTemp\", \"file\") || 0; // Ulkolämpötila (°C)\nconst outdoorTempThreshold = global.get(\"outdoorTempThreshold\", \"file\") || 15; // Ulkolämpöraja, jonka jälkeen voidaan pienentää tehoa\nconst sisalammonAla = global.get(\"sisalammonAla\", \"file\") || 20; // Sisälämpötilan alaraja (°C)\nconst sisalammonYla = global.get(\"sisalammonYla\", \"file\") || 24; // Sisälämpötilan yläraja (°C)\nconst varaajaAla = global.get(\"varaajaAla\", \"file\") || 50; // Varaajan alaosan lämpötila (°C)\nconst hysteresisMargin = global.get(\"hysteresisMargin\", \"file\") || 1.6; // Hystereesiväli °C, estää sahausta\nconst priceThresholds = {\n    low: global.get(\"lowPrice\", \"file\") || 30, // Halvan sähkön raja (€/MWh)\n    veryHigh: global.get(\"veryHighPrice\", \"file\") || 200 // Korkean sähkön raja (€/MWh)\n};\nconst maxBoilerTemp = global.get(\"maxBoilerTemp\", \"file\") || 85; // Varaajan maksimilämpötila (°C)\nlet indoorDelta = global.get(\"indoorDelta\", \"file\"); // Sisälämpötilan muutosnopeus (°C/1min)\n\n// 2. AJAN KÄSITTELY JA SÄHKÖN HINNAN HAKU\n// Haetaan nykyinen aika ja sähkön hintatiedot, sekä tarkistetaan kuuluuko tunti halpoihin tunteihin.\n// Käytetään Moment.js -kirjastoa aikavyöhykkeen käsittelyyn (Europe/Helsinki).\n\nconst moment = global.get('moment');\nlet now = moment().tz('Europe/Helsinki').valueOf(); // Nykyhetken aika millisekunteina\nlet currentTimestamp = moment().tz('Europe/Helsinki').startOf('hour').toISOString(); // Tämän hetken tunti ISO-formaatissa\nlet currentPriceData = hinnat.find(entry => entry.timestamp === currentTimestamp); // Nykyisen tunnin hintatieto\nlet currentPrice = currentPriceData ? currentPriceData.price : null; // Sähkön hinta €/MWh\nlet classification = currentPriceData ? currentPriceData.classification : \"unknown\"; // Hintaluokka (halpa, kallis, normaali)\n\nlet hoursToUse = cheapestHours.slice(0, selectedHours); // Poimitaan vain tarvittava määrä halpoja tunteja\nlet isHeatingHour = hoursToUse.some(hour =>\n    new Date(hour.timestamp).toISOString() === currentTimestamp\n); // Onko nyt \"halpa tunti\" (sallii lämmityksen matalalla hinnalla)\n\n// 3. LÄMMITYSPÄÄTÖKSEN MUODOSTAMINEN\n// Päätetään käynnistetäänkö vai pysäytetäänkö lämmitys, mittaustietojen ja hintatietojen perusteella.\n// Päätös sisältää: pyydetty tehotaso (%) ja perustelu päätökselle (reason).\n\n// 3.1 Lämmityspäätöksen alustus\nlet decision = { power: 0, reason: \"Lämmitystä ei tarvita\" };\n\n// 3.2 Vikasuoja: Jos sisälämpötila puuttuu tai liian korkea\nif (indoorTemp === null || indoorTemp >= 50) {\n    decision = { power: 0, reason: \"Vikasuoja: Sisälämpötila puuttuu tai liian korkea, lämmitys estetty\" };\n}\n\n// 3.3 Lämmityksen käynnistys- ja pysäytyslogiikka\n// Tarkistetaan ensisijaisesti sisälämpötilan rajoja ja hintaluokkaa:\n\nif (indoorTemp < sisalammonAla) {\n    // 3.3.1 Sisälämpötila alle minimirajan → lämmitys 100%\n    decision = {\n        power: 100,\n        reason: `Sisälämpötila (${indoorTemp.toFixed(1)}°C) alle minimirajan (${sisalammonAla}°C)`\n    };\n} else if (indoorTemp >= sisalammonYla) {\n    // 3.3.2 Sisälämpötila yli maksimirajan → lämmitys pois\n    decision = {\n        power: 0,\n        reason: `Sisälämpötila (${indoorTemp.toFixed(1)}°C) yli maksimirajan (${sisalammonYla}°C)`\n    };\n} else if (actualBoilerStatus > 0) {\n    // 3.3.3 Lämmityksen jatkaminen: jos edullinen hinta tai edullinen tunti\n    if (isHeatingHour || (currentPrice !== null && currentPrice < priceThresholds.low)) {\n        decision = {\n            power: 100,\n            reason: `Lämmitys jatkuu (edullinen tunti)`\n        };\n    } else {\n        decision = {\n            power: 0,\n            reason: `Lämmitys keskeytetty korkean hinnan vuoksi`\n        };\n    }\n} else {\n    // 3.3.4 Lämmitys ei käynnisty, lämpötila alueella eikä kattila päällä\n    decision = {\n        power: 0,\n        reason: `Lämmitys ei käynnisty: lämpötila normaalialueella ja kattila ei aktiivinen`\n    };\n}\n\n// 3.4 TEHOMUUNNOS: MUNNETAAN PÄÄTÖS VÄLITTÖMÄSTI OHJAUSPORTAAN TASOKSI\n// Muunnetaan tehty päätös (power %) heti Shelly-dimmerin vaatimaan portaaseen (step).\n// Tämä varmistaa, että jatkossa kaikki ohjaukset ja vertailut tehdään oikein porrastetulla teholla.\n\nfunction convertToPowerStep(value) {\n    if (value < 13.0) return { power: 0, step: 0 };\n    if (value < 28.0) return { power: 15, step: 1 };\n    if (value < 43.0) return { power: 30, step: 2 };\n    if (value < 58.0) return { power: 40, step: 3 };\n    if (value < 73.0) return { power: 55, step: 4 };\n    if (value < 86.0) return { power: 70, step: 5 };\n    if (value < 95.0) return { power: 85, step: 6 };\n    return { power: 100, step: 7 };\n}\n\n// Muunnos heti päätöksen jälkeen\nlet converted = convertToPowerStep(decision.power);\ndecision.power = converted.power;   // Päivitetään päätöksen teho oikeaksi\ndecision.step = converted.step;     // Tallennetaan step-arvo myöhempää käyttöä varten\n\n\n// 4. HYSTEREESI: TURHIEN KYTKENTÖJEN ESTÄMINEN\n// Lämmityksen turhat päälle/pois-kytkennät estetään hystereesialueella analysoimalla lämpötilaa ja edellisiä tiloja.\n\n// 4.1 Hystereesi OFF → ON\n// Jos kattila on sammutettuna ja lämpötila on kasvihuoneen minimi- ja maksimiarvon välissä:\n// - Jos lämpötila on lähellä alarajaa (alle sisalammonAla + hysteresisMargin), jatketaan lämmitystä.\n// - Jos sähkö on kallista, vältetään lämmitystä, vaikka lämpötila olisi matala.\n// - Muussa tapauksessa jatketaan lämmitystä normaalisti.\nif (decision.power === 0 && actualBoilerStatus === 0 && indoorTemp >= sisalammonAla && indoorTemp < sisalammonYla) {\n    if (indoorTemp < (sisalammonAla + hysteresisMargin)) {\n        decision = { power: 100, reason: `Hystereesivyöhyke: jatketaan lämmitystä (${indoorTemp.toFixed(1)}°C)` };\n    } else if (!isHeatingHour || (currentPrice !== null && currentPrice >= priceThresholds.low)) {\n        decision = { power: 0, reason: `Hystereesivyöhyke: korkea hinta, ei lämmitystä` };\n    } else {\n        decision = { power: 100, reason: `Hystereesivyöhyke: jatketaan edullisella sähköllä` };\n    }\n}\n\n// 4.2 Hystereesi ON → OFF\n// Jos kattila on päällä ja päätös olisi sammuttaa, tarkistetaan sammutuksen estoehdot:\n// - 4.2.1 Jos edellisestä sammutuksesta kulunut aika on lyhyt, estetään sammutus.\n// - 4.2.2 Jos sisälämpötila ei ole merkittävästi noussut (pieni indoorDelta), estetään sammutus.\n// - 4.2.3 Muussa tapauksessa sallitaan sammutus ja tallennetaan ajankohta.\nconst lastOffTime = global.get(\"lastOffTime\", \"file\") || 0;\nconst offCooldown = 10 * 60 * 1000; // 10 min viive\n\nif (\n    decision.power === 0 &&\n    actualBoilerStatus > 0 &&\n    indoorTemp >= sisalammonAla &&\n    indoorTemp < (sisalammonAla + hysteresisMargin)\n) {\n    if ((now - lastOffTime < offCooldown)) {\n        decision = { power: 100, reason: `Hystereesi: Estetty sammutus, aika edellisestä ${Math.round((now - lastOffTime) / 1000)} s` };\n    } else if (indoorDelta !== null && indoorDelta < 0.05) {\n        decision = { power: 100, reason: `Hystereesi: Lämpötilan nousu liian pieni (${indoorDelta.toFixed(2)}°C/1min)` };\n    } else {\n        global.set(\"lastOffTime\", now, \"file\");\n        decision = { power: 0, reason: `Hystereesi: Sallittu sammutus, lämpötila noussut tarpeeksi` };\n    }\n}\n\n// 5. LÄMPÖTILATRENDIEN SEURANTA JA ENNAKOIVA LÄMMITYS\n// Tallennetaan lyhyen ja pitkän aikavälin sisälämpötilatrendit ja ennakoidaan mahdollinen lämpötilan lasku ilta- ja yöaikaan.\n\n// 5.1 Ennakoiva lämmitys\n// - Tallennetaan viimeisimmät lämpötilamittaukset analyysia varten.\n// - Jos lämpötila laskee nopeasti tai on matala, käynnistetään lämmitys ennakoivasti.\nlet previousTemps = global.get(\"previousIndoorTemps\", \"file\") || [];\npreviousTemps.push(indoorTemp);\nif (previousTemps.length > 5) previousTemps.shift();\nglobal.set(\"previousIndoorTemps\", previousTemps, \"file\");\n\nlet deltaLong = null;\nif (previousTemps.length === 5) {\n    deltaLong = previousTemps[4] - previousTemps[0];\n    global.set(\"deltaLong\", deltaLong, \"file\");\n}\n\nindoorDelta = null;\nif (previousTemps.length >= 2) {\n    indoorDelta = previousTemps[previousTemps.length - 1] - previousTemps[previousTemps.length - 2];\n    global.set(\"indoorDelta\", indoorDelta, \"file\");\n}\n\nconst hour = moment().tz('Europe/Helsinki').hour();\nif (\n    deltaLong !== null &&\n    ((deltaLong < -0.25) || indoorTemp < 18.0) &&\n    varaajaAla < 45 &&\n    indoorTemp < (sisalammonAla + 3.0) &&\n    actualBoilerStatus === 0 &&\n    (hour >= 15 || hour <= 6)\n) {\n    decision = { power: 100, reason: `Ennakoiva lämmitys: Δ=${deltaLong.toFixed(2)}°C/25min, indoor=${indoorTemp.toFixed(1)}°C` };\n}\n\n// 5.2 Estä turha lämmitys korkean sisälämpötilan takia\n// Jos lämpötila on korkea ja lämmitys olisi jatkumassa halvan sähkön takia, estetään turha lämmitys.\nif (\n    decision.power > 0 &&\n    indoorTemp > sisalammonYla + 1 &&\n    decision.reason.includes(\"halvan sähkön\")\n) {\n    decision = { power: 0, reason: `Lämmitys estetty: sisälämpötila korkea (${indoorTemp.toFixed(1)}°C)` };\n}\n\n// 6. KATTILAN LÄMPÖTILAN NOUSUNOPEUDEN TARKKAILU\n// Seurataan kattilasta lähtevän veden lämpötilan nousunopeutta ja estetään ylikuumeneminen, jos nousu on liian nopea.\n\n// 6.1 Kattilan nousunopeuden tarkkailu\nlet previousKattilasta = global.get(\"previousKattilasta\", \"file\") || [];\nconst currentKattilasta = global.get(\"kattilasta\", \"file\");\n\nif (typeof currentKattilasta === \"number\") {\n    previousKattilasta.push(currentKattilasta);\n    if (previousKattilasta.length > 5) previousKattilasta.shift();\n    global.set(\"previousKattilasta\", previousKattilasta, \"file\");\n}\n\nif (\n    decision.power > 0 &&\n    previousKattilasta.length >= 3 &&\n    actualBoilerStatus > 0 &&\n    varaajaAla > 60 &&\n    currentKattilasta > 80\n) {\n    const d1 = previousKattilasta[2] - previousKattilasta[1];\n    const d2 = previousKattilasta[1] - previousKattilasta[0];\n    const avgRise = (d1 + d2) / 2;\n\n    if (avgRise > 2.0) {\n        decision = { power: 0, reason: `Ylikuumenemisen esto: nousu ${avgRise.toFixed(2)}°C/2min` };\n    }\n}\n\n// 7. PÄÄTÖSVIIVEEN JA SIIRTYMÄN HALLINTA\n// Rajoitetaan kuinka nopeasti päätökset voivat muuttaa lämmitystehoa estäen liian nopeita muutoksia.\n\n// 7.1 Päätösviive ja tehomuutoskontrolli\nconst previousPower = global.get(\"lastDecisionPower\", \"file\") || 0;\nconst previousTime = global.get(\"lastDecisionTime\", \"file\") || 0;\nconst elapsed = now - previousTime;\n\nconst significantChange = Math.abs(decision.power - previousPower) >= 15;\nconst isRising = decision.power > previousPower;\nconst isZeroToFull = previousPower === 0 && decision.power >= 100;\nconst minWait = isRising ? 90000 : 30000;\n\nif (significantChange && !isZeroToFull && elapsed < minWait) {\n    decision = {\n        power: previousPower,\n        reason: `Odottava tila: edellinen päätös ${previousPower} %, odotetaan (${Math.round(elapsed / 1000)} s)`\n    };\n}\n\n// 7.2 Pakotettu päätös\n// Jos odotus on jatkunut liian pitkään ilman kattilan reaktiota, pakotetaan uusi 100% päätös.\nconst waitLimit = 3 * 60 * 1000;\nif (\n    decision.reason.startsWith(\"Odottava tila\") &&\n    now - previousTime >= waitLimit &&\n    Math.abs(actualBoilerStatus - previousPower) < 5\n) {\n    decision = {\n        power: 100,\n        reason: \"Pakotettu tehopäivitys 100 %, kattila ei reagoinut\"\n    };\n}\n\n// 8. LOKITIETOJEN MUODOSTAMINEN\n// Tallennetaan ohjauspäätös ja mittaustiedot JSON-muodossa myöhempää analyysia ja käyttöliittymän näyttöä varten.\n\n// 8.1 Lokitiedot ja UI-päivitys\nconst timestamp = moment().tz('Europe/Helsinki').format(\"YYYY-MM-DD HH:mm:ss\");\n\nlet msg2 = {\n    payload: {\n        timestamp: timestamp,\n        indoorTemp: indoorTemp,\n        varaajaAla: varaajaAla,\n        varaajaYla: global.get(\"varaajaYla\", \"file\"),\n        outdoorTemp: outdoorTemp,\n        kattilasta: global.get(\"kattilasta\", \"file\"),\n        varaajasta: global.get(\"varaajasta\", \"file\"),\n        currentPrice: currentPrice,\n        isHeatingHour: isHeatingHour,\n        pvProduction: pvProduction,\n        actualBoilerStatus: actualBoilerStatus,\n        decisionPower: decision.power,\n        decisionStep: decision.step,\n        decisionReason: decision.reason,\n        indoorDelta: indoorDelta || null,\n        deltaLong: deltaLong || null\n    }\n};\nmsg2.payload = JSON.stringify(msg2.payload) + \"\\n\";\n\nlet msg3 = {\n    payload: {\n        timestamp: timestamp,\n        indoorTemp: indoorTemp.toFixed(1),\n        varaajaAla: varaajaAla.toFixed(1),\n        currentPrice: currentPrice !== null ? currentPrice.toFixed(2) : \"N/A\",\n        desiredPower: decision.power,\n        decisionStep: decision.step,\n        actualPower: actualBoilerStatus,\n        decisionReason: decision.reason\n    }\n};\n\n// 9. LÄMMITYSKOMENNON LÄHETYS\n// Lähetetään uusi lämmityskäsky Shellylle, jos teho muuttui tai komentoviive on umpeutunut.\n\nif (\n    (decision.power !== lastDimmerCommand.haluttuTeho) ||\n    (decision.power === 100 && lastDimmerCommand.haluttuTeho === 0) ||\n    (now - lastDimmerCommand.timestamp >= commandCooldown)\n) {\n    let msg1 = {\n        payload: {\n            method: \"Light.Set\",\n            parameters: { id: 0, brightness: decision.power, transition_duration: 1 },\n        },\n    };\n    global.set(\"lastDimmerCommand\", { haluttuTeho: decision.power, timestamp: now }, \"file\");\n    global.set(\"lastDecisionPower\", decision.power, \"file\");\n    global.set(\"lastDecisionTime\", now, \"file\");\n    return [msg1, msg2, msg3, null];\n} else {\n    return [null, msg2, msg3, null];\n}\n",
+        "outputs": 4,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 260,
+        "wires": [
+            [
+                "eb137ebe4ab4bec8"
+            ],
+            [
+                "3c096041af500808"
+            ],
+            [
+                "bb0e05705ee5700b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "448fb7bb03107988",
+        "type": "function",
+        "z": "db8599dd04e50dd0",
+        "name": "EntsoE kysely",
+        "func": "/**\n * © 2025 Ville Kuittinen/Karelia-ammattikorkeakoulu - MIT License - https://opensource.org/licenses/MIT\n * \n * ENTSO-E API Avaimen hankinta\n *\n * 1. Rekisteröidy käyttäjäksi ENTSO-E Transparency Platformille:\n *    ➔ https://transparency.entsoe.eu/\n *\n * 2. Luo tili ja kirjaudu sisään.\n *\n * 3. Mene kohtaan \"Account\" ➔ \"Create new API key\".\n *\n * 4. Anna avaimelle nimi (esimerkiksi \"Node-RED käyttö\") ja hyväksy käyttöehdot.\n *\n * 5. Saat API-avaimen (pitkä merkkijono), jota käytetään HTTP-pyyntöjen yhteydessä.\n *\n * 6. Huom! Avainta ei kannata jakaa julkisesti. Pidä avain salassa ja tallenna se turvalliseen paikkaan.\n *\n */\n\n\nconst moment = global.get('moment');\n\n// Aseta tähän oma ENTSO-E API securityToken\nconst securityToken = \"TÄHÄN_OMA_APIKEY\";\n\n// Huomisen tietojen nouto\nlet today = moment().tz('Europe/Helsinki').add(1, 'day').startOf('day').format('YYYYMMDD') + \"0000\";\nlet tomorrow = moment().tz('Europe/Helsinki').add(2, 'days').startOf('day').format('YYYYMMDD') + \"0000\";\n\n\n// Muodostetaan URL\nmsg.url = `https://web-api.tp.entsoe.eu/api?securityToken=${securityToken}&documentType=A44&processType=A16&in_Domain=10YFI-1--------U&out_Domain=10YFI-1--------U&periodStart=${today}&periodEnd=${tomorrow}`;\n\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 140,
+        "wires": [
+            [
+                "8ad681561f552b6a"
+            ]
+        ]
+    },
+    {
+        "id": "8ad681561f552b6a",
+        "type": "http request",
+        "z": "db8599dd04e50dd0",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 490,
+        "y": 140,
+        "wires": [
+            [
+                "99c87bb679670d1b"
+            ]
+        ]
+    },
+    {
+        "id": "bb0e05705ee5700b",
+        "type": "ui_template",
+        "z": "db8599dd04e50dd0",
+        "group": "f690cc5791641bf3",
+        "name": "UI Päätöstiedot",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"card\">\n    <h2 class=\"card-header\">Energiapäätös</h2>\n    <div class=\"card-body\">\n        <p><b>Päätös:</b> <strong>{{msg.payload.decisionReason}}</strong></p>\n        <p></p>\n        <p>{{msg.payload.timestamp}}</p>\n        <p><b>Sähkön hinta:</b>\n            <span ng-class=\"{'text-danger': msg.payload.currentPrice > 80, 'text-success': msg.payload.currentPrice < 20}\">\n                {{msg.payload.currentPrice}} €/MWh\n            </span>\n        </p>\n        <p><b>Haluttu teho:</b> {{msg.payload.desiredPower}} % ({{msg.payload.desiredStep}})</p>\n        <p><b>Nykyinen teho:</b> {{msg.payload.actualBoilerStatus}} %</p>\n        <p><b>Varaajan alaosa:</b> {{msg.payload.varaajaAla}} °C</p>\n        <p><b>Sisälämpötila:</b> {{msg.payload.indoorTemp}} °C</p>\n        <p><b>Ulkolämpötila:</b> {{msg.payload.outdoorTemp}} °C</p>\n        <p><b>Aurinkosähkön tuotanto:</b> {{msg.payload.pvProduction}} kW</p>\n    </div>\n</div>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 900,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0b125842cfcfea29",
+        "type": "switch",
+        "z": "db8599dd04e50dd0",
+        "name": "",
+        "property": "#:(file)::enabled",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 330,
+        "y": 280,
+        "wires": [
+            [
+                "70c74fedcbabb1fd"
+            ],
+            [
+                "f28d909f18793afa"
+            ]
+        ]
+    },
+    {
+        "id": "f28d909f18793afa",
+        "type": "debug",
+        "z": "db8599dd04e50dd0",
+        "name": "Poissa päältä viesti",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "55b70afc5f17df2a",
+        "type": "link out",
+        "z": "db8599dd04e50dd0",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "8cc2079278c7ac17"
+        ],
+        "x": 1015,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "3a662bf349ed1d2c",
+        "type": "comment",
+        "z": "db8599dd04e50dd0",
+        "name": "Ohjauslogiikka",
+        "info": "",
+        "x": 140,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "47fd33385ab06935",
+        "type": "catch",
+        "z": "db8599dd04e50dd0",
+        "name": "Kaappaa kaikki virheet",
+        "scope": [],
+        "uncaught": false,
+        "x": 180,
+        "y": 440,
+        "wires": [
+            [
+                "de6292e6e25a8e5e"
+            ]
+        ]
+    },
+    {
+        "id": "de6292e6e25a8e5e",
+        "type": "function",
+        "z": "db8599dd04e50dd0",
+        "name": "Käsittele virheet",
+        "func": "// © 2025 Ville Kuittinen/Karelia-ammattikorkeakoulu - MIT License - https://opensource.org/licenses/MIT\n\n// Tämä solmu käsittelee virheen ja lisää sen virhehistoriaan\ntry {\n    let errors_summary = flow.get(\"errors_summary\") || [];\n    let errors_all = flow.get(\"errors_all\") || [];\n\n    if (msg.topic === \"reset\") {\n        flow.set(\"errors_summary\", []);\n        flow.set(\"errors_all\", []);\n        msg.payload = [];\n        return msg;\n    }\n\n    let now = new Date();\n    let key = (msg.error?.source?.name || \"Unknown\") + \"|\" + (msg.error?.message || \"Unknown error\");\n\n    // Päivitä tiivistelmä\n    let existing = errors_summary.find(e => e.key === key);\n    if (existing) {\n        existing.count++;\n        existing.timestamp = now.getTime();\n        existing.time = now.toLocaleString();\n    } else {\n        errors_summary.push({\n            key,\n            timestamp: now.getTime(),\n            time: now.toLocaleString(),\n            message: msg.error?.message || \"Unknown message\",\n            source: msg.error?.source?.name || \"Unknown\",\n            type: msg.error?.source?.type || \"Unknown\",\n            count: 1\n        });\n    }\n\n    // Lisää yksittäinen virhe historiaan\n    if (errors_all.length >= 10) {\n        errors_all.shift();\n    }\n    errors_all.push({\n        timestamp: now.getTime(),\n        time: now.toLocaleString(),\n        message: msg.error?.message || \"Unknown message\",\n        source: msg.error?.source?.name || \"Unknown\",\n        type: msg.error?.source?.type || \"Unknown\"\n    });\n\n    flow.set(\"errors_summary\", errors_summary);\n    flow.set(\"errors_all\", errors_all);\n\n    msg.payload = {\n        summary: errors_summary,\n        all: errors_all\n    };\n    return msg;\n\n} catch (err) {\n    node.error(\"Virheen käsittely epäonnistui: \" + err.message);\n    return null;\n}",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 460,
+        "wires": [
+            [
+                "4284c42f0fe832d4"
+            ]
+        ]
+    },
+    {
+        "id": "4284c42f0fe832d4",
+        "type": "debug",
+        "z": "db8599dd04e50dd0",
+        "name": "Näytä virheet",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "44d052281806e25d",
+        "type": "inject",
+        "z": "db8599dd04e50dd0",
+        "name": "Tallennus kerran päivässä",
+        "props": [],
+        "repeat": "86400",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 180,
+        "y": 540,
+        "wires": [
+            [
+                "63f03f94a0d4fb1e"
+            ]
+        ]
+    },
+    {
+        "id": "63f03f94a0d4fb1e",
+        "type": "function",
+        "z": "db8599dd04e50dd0",
+        "name": "Valmistele CSV-tiedosto",
+        "func": "// © 2025 Ville Kuittinen/Karelia-ammattikorkeakoulu - MIT License - https://opensource.org/licenses/MIT\n\n// Valmistellaan CSV-tiedosto errors_summary -datasta\nlet errors = flow.get(\"errors_summary\") || [];\n\nif (errors.length === 0) {\n    node.status({ fill: \"yellow\", shape: \"ring\", text: \"Ei virheitä tallennettavaksi\" });\n    return null;\n}\n\nlet now = new Date();\nlet yyyy = now.getFullYear();\nlet mm = (now.getMonth() + 1).toString().padStart(2, '0');\nlet dd = now.getDate().toString().padStart(2, '0');\n\nmsg.filename = `error_summary_${yyyy}${mm}${dd}.csv`;\n\nlet csv = \"timestamp,time,message,source,type,count\\n\";\nerrors.forEach(e => {\n    csv += `${e.timestamp},\"${e.time}\",\"${e.message}\",\"${e.source}\",\"${e.type}\",${e.count}\\n`;\n});\n\nmsg.payload = csv;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 540,
+        "wires": [
+            [
+                "61dac084548a7888"
+            ]
+        ]
+    },
+    {
+        "id": "61dac084548a7888",
+        "type": "file",
+        "z": "db8599dd04e50dd0",
+        "name": "Tallenna virheet tiedostoon",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 680,
+        "y": 540,
+        "wires": [
+            [
+                "ee210a572363be12",
+                "69b972f4f20eab9b"
+            ]
+        ]
+    },
+    {
+        "id": "ee210a572363be12",
+        "type": "debug",
+        "z": "db8599dd04e50dd0",
+        "name": "Tallennettu CSV",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "filename",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "69b972f4f20eab9b",
+        "type": "change",
+        "z": "db8599dd04e50dd0",
+        "name": "Resetoi virhehistoria",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "reset",
+                "tot": "str"
+            }
+        ],
+        "x": 180,
+        "y": 480,
+        "wires": [
+            [
+                "de6292e6e25a8e5e"
+            ]
+        ]
+    },
+    {
+        "id": "b951e23d878a74f6",
+        "type": "comment",
+        "z": "db8599dd04e50dd0",
+        "name": "OHJE",
+        "info": "Asennusohje: Node-RED Energia*\n\nEnergia* on Karelia-ammattikorkeakoulun Älykkäät energiayhteisöt -hankkeen tuottama lämmityksen ohjausjärjestelmä.\n\nLisenssi\nTämä Node-RED -kokonaisuus ja siihen liittyvät koodit on julkaistu MIT-lisenssillä.\n- Saa käyttää vapaasti kaupallisesti ja ei-kaupallisesti\n- Saa muokata ja jakaa edelleen\n- Ei takuita toimivuudesta\n- Tekijä (alkuperäinen lähde) on mainittava: Copyright © 2025 [Ville Kuittinen / Karelia-ammattikorkeakoulu]\n\n\nTervetuloa käyttämään Energia* järjestelmää. Tämä dokumentti kertoo, mitä tarvitaan ja miten saat kaiken toimimaan Node-RED:issä.\nA. Node-RED Asennus\n    •\tAsenna Node.js virallisilta sivuilta: https://nodejs.org/\n    •\tTarkista versiot: node -v ja npm -v\n    •\tAsenna Node-RED: sudo npm install -g --unsafe-perm node-red\n    •\tKäynnistä Node-RED komennolla: node-red\n    •\tAvaa selain: http://localhost:1880 (yleensä http://127.0.0.1:1880)\n\nB. Komponenttien Asennus Node-RED:iin\n1.\tAvaa selain ja mene Node-RED:n hallintapaneeliin\n2.\tKlikkaa oikeasta yläkulmasta \"Manage palette\" (hammasratas).\n3.\tValitse \"Install\"-välilehti.\n4.\tEtsi ja asenna seuraavat:\n    - node-red-dashboard\n    - node-red-node-moment\n    - node-red-node-csv\n5.\tLisää moment-timezone settings.js -tiedostoon globaaliksi muuttujaksi:\n6.\tfunctionGlobalContext: { moment: require('moment-timezone') }\n7.\tKäynnistä Node-RED uudelleen\n\nC. Muita huomioita:\n    •\tSolmujen koodissa on pyritty niin laajaan kommentointiin, että pystyt ymmärtämään mitä niissä tapahtuu.\n    •\tSelaimen virkistäminen (F5): Jos dashboardin elementit eivät näy oikein ensimmäisellä kerralla, tee selainikkunan päivitys.\n    •\tTiedostojen kirjoitus: Varmista, että Node-RED-käyttäjällä on oikeudet kirjoittaa tiedostoja siihen hakemistoon, jonne CSV-tiedostot tallennetaan.\n    •\tAPI-avaimet: Jos haet tietoa esim. ENTSO-E:stä, varmista että oma API-avaimesi on asetettu oikein hakupyynnön URL:iin\n\nD. Vianmääritys\n    •\tNode-RED ei käynnisty: tarkista Node.js-asennus ja settings.js.\n    •\tShelly-laitteet eivät yhdistä: tarkista IP:t ja verkko.\n    •\tAikaleimat väärin: varmista moment-asennus ja aikavyöhyke.\n",
+        "x": 450,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "41445649710d840c",
+        "type": "comment",
+        "z": "db8599dd04e50dd0",
+        "name": "Energia* / Karelia-ammattikorkeakoulu",
+        "info": "",
+        "x": 210,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "4dd67ed44cfc6371",
+        "type": "function",
+        "z": "e3d79ada6156224f",
+        "name": "Hinnat, korostus ja luokittelu taulukkoa varten",
+        "func": "// © 2025 Ville Kuittinen/Karelia-ammattikorkeakoulu - MIT License - https://opensource.org/licenses/MIT\n\n// Haetaan globaalimuuttujista luokitellut hinnat ja halvimmat tunnit\nlet prices = global.get(\"hinnatLuokiteltu\", \"file\") || [];\nlet cheapestHours = global.get(\"halvat\", \"file\") || [];\nlet cheapHoursCount = global.get(\"cheapHoursCount\", \"file\") || 0;\n\n// Funktio aikaleiman normalisoimiseen ISO 8601 -muotoon\nconst normalizeTimestamp = (timestamp) => new Date(timestamp).toISOString();\n\n// Funktio, joka palauttaa kellonajan Helsingin paikallisaikaa käyttäen\nconst getTimeOnly = (timestamp) => new Date(timestamp).toLocaleTimeString(\"fi-FI\", {\n    timeZone: \"Europe/Helsinki\",\n    hour: \"2-digit\",\n    minute: \"2-digit\"\n});\n\n// Määritellään värit hintaluokituksille\nconst classificationColors = {\n    \"erittäin halpa\": \"#ccffcc\",\n    \"halpa\": \"#e6ffe6\",\n    \"normaali\": \"#ffffcc\",\n    \"kallis\": \"#ffcccc\",\n    \"erittäin kallis\": \"#ff9999\"\n};\n\n// Valitaan käyttäjän määrittelemä määrä halvimpia tunteja\nlet hoursToUse = cheapestHours.slice(0, cheapHoursCount);\nlet normalizedHoursToUse = hoursToUse.map(hour => normalizeTimestamp(hour.timestamp));\n\n// Käydään läpi hinnat ja lisätään korostus, väri ja kellonaika\nprices.forEach(price => {\n    let normalizedPriceTimestamp = normalizeTimestamp(price.timestamp);\n    price.highlight = normalizedHoursToUse.includes(normalizedPriceTimestamp);\n    price.color = classificationColors[price.classification] || \"transparent\";\n    price.timeOnly = getTimeOnly(price.timestamp);\n});\n\n// Asetetaan päiväotsikko ensimmäisen hinnan perusteella\nlet dateHeader = prices.length > 0\n    ? new Date(prices[0].timestamp).toLocaleDateString(\"fi-FI\", { timeZone: \"Europe/Helsinki\" })\n    : new Date().toLocaleDateString(\"fi-FI\", { timeZone: \"Europe/Helsinki\" });\n\n// Palautetaan taulukon tiedot käyttöliittymälle\nmsg.payload = { prices, dateHeader };\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 100,
+        "wires": [
+            [
+                "70e63098be9b9111"
+            ]
+        ]
+    },
+    {
+        "id": "70e63098be9b9111",
+        "type": "ui_template",
+        "z": "e3d79ada6156224f",
+        "group": "fb0332b9eab4a6d1",
+        "name": "Hintataulukko",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "format": "<div>\n    <h3 style=\"text-align: center;\">{{ msg.payload.dateHeader }}</h3>\n</div>\n<table style=\"width: 100%; border-collapse: collapse; font-family: Arial, sans-serif;\">\n    <thead>\n        <tr style=\"background-color: #f2f2f2;\">\n            <th style=\"border: 1px solid #ddd; padding: 2px; text-align: left; width: 20%;\">Aika</th>\n            <th style=\"border: 1px solid #ddd; padding: 2px; text-align: right; width: 30%;\">EUR/MWh (alv 0%)</th>\n            <th style=\"border: 1px solid #ddd; padding: 2px; text-align: center; width: 30%;\">Luokittelu</th>\n            <th style=\"border: 1px solid #ddd; padding: 2px; text-align: center; width: 20%;\">Lämmitys</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr ng-repeat=\"row in msg.payload.prices\" \n            ng-style=\"{'background-color': row.color, 'font-weight': row.highlight ? 'bold' : 'normal'}\">\n            <td style=\"border: 1px solid #ddd; padding: 2px;\">{{ row.timeOnly }}</td>\n            <td style=\"border: 1px solid #ddd; padding: 2px; text-align: right;\">{{ row.price }}</td>\n            <td style=\"border: 1px solid #ddd; padding: 2px; text-align: center;\">{{ row.classification }}</td>\n            <td style=\"border: 1px solid #ddd; padding: 2px; text-align: center;\">{{ row.highlight ? 'X' : '' }}</td>\n        </tr>\n    </tbody>\n</table>\n\n<style>\n    table {\n        width: 100%; /* Ensures the table uses the full width of the container */\n    }\n\n    th, td {\n        padding: 12px; /* Increases padding for better readability */\n    }\n</style>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1220,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5946e0be5b191d07",
+        "type": "ui_slider",
+        "z": "e3d79ada6156224f",
+        "name": "Halvimpien tuntien valitsin",
+        "label": "Lämmitykseen valittavat halvimmat tunnit / kpl",
+        "tooltip": "Kuinka monen halvimman tunnin aikana lämmitetään.  Huom! huomioidaan vasta seuraavan vuorokauden lämmityksessä",
+        "group": "20b69aeedb8eda52",
+        "order": 8,
+        "width": "14",
+        "height": 1,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "24",
+        "step": 1,
+        "className": "",
+        "x": 630,
+        "y": 180,
+        "wires": [
+            [
+                "dca660dd77bfb0c4"
+            ]
+        ]
+    },
+    {
+        "id": "2879a7d13485a792",
+        "type": "switch",
+        "z": "e3d79ada6156224f",
+        "name": "",
+        "property": "valid",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1010,
+        "y": 180,
+        "wires": [
+            [
+                "11bc6b25d491fe63"
+            ],
+            [
+                "6d583027ddbea557"
+            ]
+        ]
+    },
+    {
+        "id": "11bc6b25d491fe63",
+        "type": "change",
+        "z": "e3d79ada6156224f",
+        "name": "Aseta tuntien määrä (kpl)",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::cheapHoursCount",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1210,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6d583027ddbea557",
+        "type": "ui_toast",
+        "z": "e3d79ada6156224f",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Nollatunti varoitus näytölle",
+        "x": 1220,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dca660dd77bfb0c4",
+        "type": "function",
+        "z": "e3d79ada6156224f",
+        "name": "Tuntien vahvistus",
+        "func": "//© 2025 Ville Kuittinen/Karelia-ammattikorkeakoulu - MIT License - https://opensource.org/licenses/MIT\n\n// Haetaan käyttäjän syöte ja käytettävissä olevat tunnit\nlet inputHours = msg.payload; // Käyttäjän valitsema tuntimäärä\nlet availableHours = flow.get(\"hinnat\") ? flow.get(\"hinnat\").length : 24; // Oletuksena 24, jos data puuttuu\n\n// Konfiguroidaan liukusäätimen (slider) ohjaustiedot\nmsg.ui_control = {\n    min: 0,                 // Pienin arvo (0 tuntia valittuna)\n    max: availableHours,    // Suurin arvo (kaikki tunnit käytettävissä)\n    step: 1                 // Askellus 1 tunti kerrallaan\n};\n\n// Tarkistetaan onko tunteja ylipäätään saatavilla\nif (availableHours === 0) {\n    msg.payload = \"Ei saatavilla olevia tunteja validaatioon.\";\n    msg.valid = false; // Virheellinen syöte\n    return msg;\n}\n\n// Varmistetaan että käyttäjän syöte on sallittujen rajojen sisällä\nif (inputHours < 0 || inputHours > availableHours) {\n    msg.payload = `Virheellinen syöte. Valitse 0 ja ${availableHours} tunnin välillä.`;\n    msg.valid = false; // Virheellinen syöte\n    msg.resetToDefault = true; // Ehdotetaan oletusarvoon palauttamista\n} else {\n    msg.payload = inputHours;\n    msg.valid = true; // Syöte on kelvollinen\n    msg.resetToDefault = false; // Palautusta ei tarvita\n}\n\n// Erikoistapaus: 0 tuntia valittu\nif (inputHours === 0) {\n    msg.payload = \"Huom. Ei valita yhtään tuntia, lämmitys hoidetaan kattilan oman logiikan mukaan.\";\n    msg.valid = false; // Erikoistapaus\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 180,
+        "wires": [
+            [
+                "2879a7d13485a792"
+            ]
+        ]
+    },
+    {
+        "id": "e675b615fdff4df1",
+        "type": "function",
+        "z": "e3d79ada6156224f",
+        "name": "Hintojen luokittelija",
+        "func": "/**\n * © 2025 Ville Kuittinen/Karelia-ammattikorkeakoulu - MIT License - https://opensource.org/licenses/MIT\n * \n * Tämä solmu käsittelee CSV-muotoisia hintatietoja, jotka on tuotettu edellisessä solmussa, ja luokittelee tunnin hinnan tilastollisesti.\n *\n * Toiminta:\n * 1. CSV-data parsitaan taulukoksi, jossa jokaisessa objektissa on kentät \"timestamp\" ja \"price\".\n * 2. Aikaleimat validoidaan ISO-muotoisina käyttäen Moment.js:ää, jolloin niiden parsiminen onnistuu automaattisesti.\n * 3. Tiedot lajitellaan aikajärjestykseen ja otetaan viimeiset 24 tunnin tietueet (ajantasaiset tiedot).\n * 4. Jokaiselle 24 tunnin tietueelle määritetään liukuva hintatietojen ikkuna, joka kattaa edelliset 30 päivää.\n * 5. Liukuvan ikkunan osalta lasketaan hintojen keskiarvo ja keskihajonta.\n * 6. Lasketaan z-score tietueelle: (hinta - keskiarvo) / keskihajonta.\n * 7. Z-score:sta annetaan luokitus seuraavien sääntöjen mukaan:\n *    - Jos z-score > 1.5: \"erittäin kallis\"\n *    - Jos z-score > 0.5: \"kallis\"\n *    - Jos z-score on välillä -0.5 ... 0.5: \"normaali\"\n *    - Jos z-score >= -1.5: \"halpa\"\n *    - Muulloin: \"erittäin halpa\"\n * 8. Luokitustulokset tallennetaan globaalimuuttujaan \"hinnatLuokiteltu\" ja palautetaan viestinä.\n */\n\n\nconst moment = global.get('moment');\n\n// Helper function to parse CSV data into a usable array of objects\nconst parseCSV = (csvData) => {\n    let rows = csvData.split(\"\\n\").filter(row => row.trim() !== \"\");\n    let headers = [\"timestamp\", \"price\"]; // Define headers explicitly\n    return rows.map(row => {\n        let values = row.split(\",\");\n        return headers.reduce((obj, header, index) => {\n            obj[header.trim()] = index === 1 ? parseFloat(values[index]) : values[index].trim();\n            return obj;\n        }, {});\n    });\n};\n\n// Parse the input CSV data\nlet csvData = msg.payload; // Get the raw CSV data as a string\nlet allData = parseCSV(csvData); // Parse the CSV data into an array of objects\n\n// Validate and filter data with valid timestamps using ISO strings\nallData = allData.filter(entry => {\n    let parsedTimestamp = moment(entry.timestamp); // ISO strings are parsed automatically\n    if (!parsedTimestamp.isValid()) {\n        node.error(`Invalid timestamp: ${entry.timestamp}`, msg);\n        return false;\n    }\n    return true;\n});\n\n// Ensure the data is valid\nif (!Array.isArray(allData) || allData.length === 0) {\n    node.error(\"Input data is not an array or is empty after validation\", msg);\n    return null;\n}\n\n// Sort the data by timestamp\nallData.sort((a, b) => new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime());\n\n// Extract the last 24 entries\nlet last24Entries = allData.slice(-24); // Get the last 24 entries from the sorted data\n\n// Constants for sliding window (30 days)\nconst thirtyDays = 30 * 24 * 60 * 60 * 1000; // Milliseconds in 30 days\n\n// Function to calculate mean and standard deviation\nconst calculateStats = (prices) => {\n    let mean = prices.reduce((sum, price) => sum + price, 0) / prices.length;\n    let stdDev = Math.sqrt(prices.reduce((sum, price) => sum + Math.pow(price - mean, 2), 0) / prices.length);\n    return { mean, stdDev };\n};\n\n// Function to classify z-scores\nconst classifyZScore = (zScore) => {\n    if (zScore > 1.5) return \"erittäin kallis\";\n    if (zScore > 0.5) return \"kallis\";\n    if (zScore >= -0.5) return \"normaali\";\n    if (zScore >= -1.5) return \"halpa\";\n    return \"erittäin halpa\";\n};\n\n// Calculate z-scores and classifications for the last 24 entries\nlet results = [];\nlast24Entries.forEach(entry => {\n    let currentTime = new Date(entry.timestamp).getTime();\n\n    // Filter prices within the 30-day window\n    let windowData = allData.filter(e => {\n        let time = new Date(e.timestamp).getTime();\n        return currentTime - time <= thirtyDays && time <= currentTime;\n    });\n\n    // Extract prices for the window\n    let windowPrices = windowData.map(e => e.price);\n\n    if (windowPrices.length > 0) {\n        let { mean, stdDev } = calculateStats(windowPrices);\n        let zScore = (stdDev > 0) ? (entry.price - mean) / stdDev : 0;\n\n        results.push({\n            timestamp: entry.timestamp,\n            price: entry.price,\n            zScore: zScore.toFixed(2),\n            classification: classifyZScore(zScore)\n        });\n    }\n});\n\n// Store the classification results in a global variable\nglobal.set(\"hinnatLuokiteltu\", results, \"file\");\n\n// Päivitetään myös halvat tunnit taulukon korostusta varten\nlet cheapHoursCount = global.get(\"cheapHoursCount\", \"file\") || 0;\n\nlet cheapestHours = results\n    .slice()\n    .sort((a, b) => a.price - b.price)\n    .slice(0, cheapHoursCount);\n\nglobal.set(\"halvat\", cheapestHours, \"file\");\n\nmsg.payload = results;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 100,
+        "wires": [
+            [
+                "4dd67ed44cfc6371"
+            ]
+        ]
+    },
+    {
+        "id": "bac705f4759ed34e",
+        "type": "file in",
+        "z": "e3d79ada6156224f",
+        "name": "",
+        "filename": "Hintatiedot_historia.csv",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 370,
+        "y": 100,
+        "wires": [
+            [
+                "e675b615fdff4df1"
+            ]
+        ]
+    },
+    {
+        "id": "28d4c7f9d869d0a0",
+        "type": "inject",
+        "z": "e3d79ada6156224f",
+        "d": true,
+        "name": "1 / min",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 580,
+        "wires": [
+            [
+                "5cb16c92b2b872a5",
+                "189fb14c19138f88",
+                "958a107b5501af23"
+            ]
+        ]
+    },
+    {
+        "id": "5cb16c92b2b872a5",
+        "type": "function",
+        "z": "e3d79ada6156224f",
+        "name": "10h data",
+        "func": "// © 2025 Ville Kuittinen/Karelia-ammattikorkeakoulu - MIT License - https://opensource.org/licenses/MIT\n\n// Haetaan historiadata globaalimuuttujasta\nlet history = global.get(\"history\", \"file\") || [];\n\n// Säilytetään vain viimeiset 500 mittauspistettä\nhistory = history.slice(-500);\n\n// Muodostetaan tyhjä kaaviodata\nlet chartData = [{\n    series: [\"Kattilan tila/%\", \"Sisälämpötila/°C\", \"Ulkolämpötila/°C\", \"Varaajan alaosa/°C\", \"Varaajan yläosa/°C\"],\n    data: [[], [], [], [], []],\n    labels: []\n}];\n\n// Täytetään kaaviodata historiasta\nhistory.forEach(point => {\n    chartData[0].data[0].push(point.actualBoilerStatus); // Kattilan toteutunut teho\n    chartData[0].data[1].push(point.indoorTemp ?? point.sisalampotila2); // Käytetään sisälämpötila tai varalähde\n    chartData[0].data[2].push(point.outdoorTemp);        // Ulkolämpötila\n    chartData[0].data[3].push(point.varaajaAla);          // Varaajan alaosan lämpötila\n    chartData[0].data[4].push(point.varaajaYla);          // Varaajan yläosan lämpötila\n    chartData[0].labels.push(new Date(point.timestamp).toLocaleTimeString('fi-FI', { timeZone: 'Europe/Helsinki' }));\n});\n\n// Lähetetään data ulos\nmsg.payload = chartData;\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 540,
+        "wires": [
+            [
+                "9a0e09ad01c09119"
+            ]
+        ]
+    },
+    {
+        "id": "9a0e09ad01c09119",
+        "type": "ui_chart",
+        "z": "e3d79ada6156224f",
+        "name": "",
+        "group": "3a59070452a44f08",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "10h",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm",
+        "interpolate": "bezier",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 650,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0c25ec0e686460da",
+        "type": "ui_template",
+        "z": "e3d79ada6156224f",
+        "group": "20b69aeedb8eda52",
+        "name": "Logot",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"logo-container\">\n    <img src=\"https://www.karelia.fi/wp-content/uploads/2020/10/Karelia_AMK_logo_RGB.jpg\" alt=\"Karelia-amk Logo\" class=\"logo\">\n    <img src=\"https://rakennerahastot.fi/documents/91635434/134016106/EU_logo_vaaka_vari.jpg/49a2ed1e-2325-a9e5-373b-19e31d8d8872?t=1677234857085\" alt=\"EU Logo\" class=\"logo\">\n</div>\n\n<style>\n    .logo-container {\n        text-align: left;\n        display: flex;\n        justify-content: left;\n        align-items: center;\n        gap: 10px;\n        padding: 5px;\n    }\n\n    .logo {\n        max-width: 300px;\n        height: auto;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 970,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "72c9591899c3ced4",
+        "type": "change",
+        "z": "e3d79ada6156224f",
+        "name": "kriittinenLampotila",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::kriittinenLampotila",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 850,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "48b92bdcf8939399",
+        "type": "ui_slider",
+        "z": "e3d79ada6156224f",
+        "name": "Kasvihuoneen hälytysraja",
+        "label": "Kasvihuoneen hälytysraja (8-14 °C)",
+        "tooltip": "Minkä lämpötilan alla lämmitys kytketään aina päälle",
+        "group": "20b69aeedb8eda52",
+        "order": 5,
+        "width": "14",
+        "height": 1,
+        "passthru": true,
+        "outs": "end",
+        "topic": "",
+        "topicType": "str",
+        "min": "8",
+        "max": "14",
+        "step": 1,
+        "className": "",
+        "x": 630,
+        "y": 220,
+        "wires": [
+            [
+                "72c9591899c3ced4"
+            ]
+        ]
+    },
+    {
+        "id": "467db8b6d0c743df",
+        "type": "change",
+        "z": "e3d79ada6156224f",
+        "name": "outdoorTempThreshold",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::outdoorTempThreshold",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 870,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9b2f803f8402319f",
+        "type": "ui_slider",
+        "z": "e3d79ada6156224f",
+        "name": "Ulkolämpötilan raja-arvo",
+        "label": "Ulkolämpötilan yläraja (8-14 °C)",
+        "tooltip": "Minkä lämpötilan yläpuolella ei lämmitetä ",
+        "group": "20b69aeedb8eda52",
+        "order": 6,
+        "width": "14",
+        "height": 1,
+        "passthru": true,
+        "outs": "end",
+        "topic": "",
+        "topicType": "str",
+        "min": "8",
+        "max": "14",
+        "step": 1,
+        "className": "",
+        "x": 630,
+        "y": 260,
+        "wires": [
+            [
+                "467db8b6d0c743df"
+            ]
+        ]
+    },
+    {
+        "id": "969410090a865e21",
+        "type": "ui_text",
+        "z": "e3d79ada6156224f",
+        "group": "f690cc5791641bf3",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Kasvihuoneen tavoiteämpötilat: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 730,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "189fb14c19138f88",
+        "type": "function",
+        "z": "e3d79ada6156224f",
+        "name": "Sisälämpötilan tavoitearvot (ala-ylä)",
+        "func": "// © 2025 Ville Kuittinen/Karelia-ammattikorkeakoulu - MIT License - https://opensource.org/licenses/MIT\n\n// Haetaan sisälämpötilan ohjauksen alaraja ja yläraja\nconst sisalammonAla = global.get(\"sisalammonAla\", \"file\") || 20;\nconst sisalammonYla = global.get(\"sisalammonYla\", \"file\") || 24;\n\n// Muodostetaan näytettävä teksti\nmsg.payload = sisalammonAla + \" - \" + sisalammonYla + \" (°C)\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 620,
+        "wires": [
+            [
+                "969410090a865e21"
+            ]
+        ]
+    },
+    {
+        "id": "2b4b1b3517d8ece7",
+        "type": "change",
+        "z": "e3d79ada6156224f",
+        "name": "sisalammonAla",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::sisalammonAla",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 840,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f72eeb4d65f0214f",
+        "type": "ui_slider",
+        "z": "e3d79ada6156224f",
+        "name": "Sisäämpötilan alaraja",
+        "label": "Kasvihuoneen alaraja (10-25 °C)",
+        "tooltip": "Lämpötila pyritään pitämään tämän yllä",
+        "group": "20b69aeedb8eda52",
+        "order": 3,
+        "width": "14",
+        "height": 1,
+        "passthru": true,
+        "outs": "end",
+        "topic": "",
+        "topicType": "str",
+        "min": "10",
+        "max": "25",
+        "step": 1,
+        "className": "",
+        "x": 620,
+        "y": 300,
+        "wires": [
+            [
+                "2b4b1b3517d8ece7"
+            ]
+        ]
+    },
+    {
+        "id": "b126f14df8a96a33",
+        "type": "change",
+        "z": "e3d79ada6156224f",
+        "name": "sisalammonYla",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::sisalammonYla",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 840,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9022077c199a1848",
+        "type": "ui_slider",
+        "z": "e3d79ada6156224f",
+        "name": "Sisäämpötilan yläraja",
+        "label": "Kasvihuoneen yläraja (10-25 °C)",
+        "tooltip": "Lämpötila pyritään pitämään tämän alla",
+        "group": "20b69aeedb8eda52",
+        "order": 4,
+        "width": "14",
+        "height": 1,
+        "passthru": true,
+        "outs": "end",
+        "topic": "",
+        "topicType": "str",
+        "min": "10",
+        "max": "25",
+        "step": 1,
+        "className": "",
+        "x": 620,
+        "y": 340,
+        "wires": [
+            [
+                "b126f14df8a96a33"
+            ]
+        ]
+    },
+    {
+        "id": "8429623959d14b67",
+        "type": "ui_slider",
+        "z": "e3d79ada6156224f",
+        "name": "Halpa sähkö",
+        "label": "Halvan sähkön yläaja (€/MWh)",
+        "tooltip": "Tämän alapuolella lämmitetään reilusti",
+        "group": "20b69aeedb8eda52",
+        "order": 11,
+        "width": "14",
+        "height": 1,
+        "passthru": true,
+        "outs": "end",
+        "topic": "",
+        "topicType": "str",
+        "min": "10",
+        "max": "100",
+        "step": 1,
+        "className": "",
+        "x": 590,
+        "y": 380,
+        "wires": [
+            [
+                "2bc545ed0ffdae57"
+            ]
+        ]
+    },
+    {
+        "id": "2bc545ed0ffdae57",
+        "type": "change",
+        "z": "e3d79ada6156224f",
+        "name": "lowPrice",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::lowPrice",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 820,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3301c996178c2ee2",
+        "type": "ui_slider",
+        "z": "e3d79ada6156224f",
+        "name": "Kallis sähkö",
+        "label": "Kalliin sähkön alaraja (€/MWh)",
+        "tooltip": "Tämän yläpuolella lämmitystä vältetään.",
+        "group": "20b69aeedb8eda52",
+        "order": 10,
+        "width": "14",
+        "height": 1,
+        "passthru": true,
+        "outs": "end",
+        "topic": "",
+        "topicType": "str",
+        "min": "10",
+        "max": "200",
+        "step": 1,
+        "className": "",
+        "x": 590,
+        "y": 420,
+        "wires": [
+            [
+                "cab34e67e9af20c0"
+            ]
+        ]
+    },
+    {
+        "id": "cab34e67e9af20c0",
+        "type": "change",
+        "z": "e3d79ada6156224f",
+        "name": "veryHighPrice",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::veryHighPrice",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 840,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5cc768a026f5e447",
+        "type": "ui_switch",
+        "z": "e3d79ada6156224f",
+        "name": "",
+        "label": "Lämmityslogiikka ON/OFF kytkin!",
+        "tooltip": "Tästä kytketään koko lämmityslogiikka päälle ja pois päältä. HUOM! Käytä vain poikkeustapauksissa!",
+        "group": "f690cc5791641bf3",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 400,
+        "y": 460,
+        "wires": [
+            [
+                "47cb02019ec5ae62"
+            ]
+        ]
+    },
+    {
+        "id": "47cb02019ec5ae62",
+        "type": "function",
+        "z": "e3d79ada6156224f",
+        "name": "Tilannetieto",
+        "func": "global.set(\"enabled\", msg.payload, \"file\");\n\nmsg.payload = {\n    text: msg.payload ? \"Energia* ohjauslogiikka on toiminnassa\" : \"Energia* ohjauslogiikka ei ole päällä!\",\n    color: msg.payload ? \"green\" : \"red\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 460,
+        "wires": [
+            [
+                "715a51e1e6f28b83"
+            ]
+        ]
+    },
+    {
+        "id": "715a51e1e6f28b83",
+        "type": "ui_template",
+        "z": "e3d79ada6156224f",
+        "group": "f690cc5791641bf3",
+        "name": "",
+        "order": 13,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"font-size: 18px; font-weight: bold; text-align: right; padding: 10px; border-radius: 5px;\"\n     ng-style=\"{'background-color': msg.payload.color, 'color': 'white'}\">\n  {{msg.payload.text}}\n</div>\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 820,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "restore_cheaphours",
+        "type": "change",
+        "z": "e3d79ada6156224f",
+        "name": "Aseta cheapHoursCount",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::cheapHoursCount",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 370,
+        "y": 180,
+        "wires": [
+            [
+                "5946e0be5b191d07"
+            ]
+        ]
+    },
+    {
+        "id": "inject_restore_all",
+        "type": "inject",
+        "z": "e3d79ada6156224f",
+        "d": true,
+        "name": "Starup",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.5,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 110,
+        "y": 180,
+        "wires": [
+            [
+                "restore_greenhouseLow",
+                "restore_greenhouseHigh",
+                "restore_lowPrice",
+                "restore_veryHighPrice",
+                "restore_outdoorTempThreshold",
+                "restore_kriittinenLampotila",
+                "restore_cheaphours",
+                "bac705f4759ed34e",
+                "5cc768a026f5e447"
+            ]
+        ]
+    },
+    {
+        "id": "restore_greenhouseLow",
+        "type": "change",
+        "z": "e3d79ada6156224f",
+        "name": "aseta sisalammonAla",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::sisalammonAla",
+                "tot": "global"
+            }
+        ],
+        "x": 360,
+        "y": 300,
+        "wires": [
+            [
+                "f72eeb4d65f0214f"
+            ]
+        ]
+    },
+    {
+        "id": "restore_greenhouseHigh",
+        "type": "change",
+        "z": "e3d79ada6156224f",
+        "name": "aseta sisalammonYla",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::sisalammonYla",
+                "tot": "global"
+            }
+        ],
+        "x": 360,
+        "y": 340,
+        "wires": [
+            [
+                "9022077c199a1848"
+            ]
+        ]
+    },
+    {
+        "id": "restore_lowPrice",
+        "type": "change",
+        "z": "e3d79ada6156224f",
+        "name": "aseta lowPrice",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::lowPrice",
+                "tot": "global"
+            }
+        ],
+        "x": 340,
+        "y": 380,
+        "wires": [
+            [
+                "8429623959d14b67"
+            ]
+        ]
+    },
+    {
+        "id": "restore_veryHighPrice",
+        "type": "change",
+        "z": "e3d79ada6156224f",
+        "name": "aseta veryHighPrice",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::veryHighPrice",
+                "tot": "global"
+            }
+        ],
+        "x": 360,
+        "y": 420,
+        "wires": [
+            [
+                "3301c996178c2ee2"
+            ]
+        ]
+    },
+    {
+        "id": "restore_outdoorTempThreshold",
+        "type": "change",
+        "z": "e3d79ada6156224f",
+        "name": "aseta outdoorTempThreshold",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::outdoorTempThreshold",
+                "tot": "global"
+            }
+        ],
+        "x": 380,
+        "y": 260,
+        "wires": [
+            [
+                "9b2f803f8402319f"
+            ]
+        ]
+    },
+    {
+        "id": "restore_kriittinenLampotila",
+        "type": "change",
+        "z": "e3d79ada6156224f",
+        "name": "aseta kriittinenLampotila",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::kriittinenLampotila",
+                "tot": "global"
+            }
+        ],
+        "x": 370,
+        "y": 220,
+        "wires": [
+            [
+                "48b92bdcf8939399"
+            ]
+        ]
+    },
+    {
+        "id": "8cc2079278c7ac17",
+        "type": "link in",
+        "z": "e3d79ada6156224f",
+        "name": "Hintojen käsittelyn jälkeen",
+        "links": [
+            "55b70afc5f17df2a"
+        ],
+        "x": 165,
+        "y": 100,
+        "wires": [
+            [
+                "bac705f4759ed34e"
+            ]
+        ]
+    },
+    {
+        "id": "958a107b5501af23",
+        "type": "function",
+        "z": "e3d79ada6156224f",
+        "name": "3d data",
+        "func": "// © 2025 Ville Kuittinen/Karelia-ammattikorkeakoulu - MIT License - https://opensource.org/licenses/MIT\n\n// Haetaan historiadata globaalimuuttujasta\nlet history = global.get(\"history\", \"file\") || [];\n\n// Säilytetään vain viimeiset 3 päivää (4 vrk näkymä)\nlet threeDaysAgo = new Date();\nthreeDaysAgo.setDate(threeDaysAgo.getDate() - 3);\nhistory = history.filter(point => new Date(point.timestamp) >= threeDaysAgo);\n\n// Muodostetaan tyhjä kaaviodata\nlet chartData = [{\n    series: [\"Kattilan tila/%\", \"Sisälämpötila/°C\", \"Ulkolämpötila/°C\", \"Varaajan alaosa/°C\", \"Varaajan yläosa/°C\"],\n    data: [[], [], [], [], []],\n    labels: []\n}];\n\n// Täytetään kaaviodata historiasta\nhistory.forEach(point => {\n    let timestamp = new Date(point.timestamp).getTime(); // Muutetaan timestamp millisekunneiksi\n\n    chartData[0].data[0].push({ x: timestamp, y: point.actualBoilerStatus }); // Kattilan toteutunut teho\n    chartData[0].data[1].push({ x: timestamp, y: point.indoorTemp ?? point.sisalampotila2 }); // Sisälämpötila\n    chartData[0].data[2].push({ x: timestamp, y: point.outdoorTemp });        // Ulkolämpötila\n    chartData[0].data[3].push({ x: timestamp, y: point.varaajaAla });          // Varaajan alaosa\n    chartData[0].data[4].push({ x: timestamp, y: point.varaajaYla });          // Varaajan yläosa\n\n    chartData[0].labels.push(new Date(timestamp).toLocaleDateString('fi-FI', { timeZone: 'Europe/Helsinki' }) + \" \" +\n        new Date(timestamp).toLocaleTimeString('fi-FI', { timeZone: 'Europe/Helsinki' }));\n});\n\n// Lähetetään data ulos\nmsg.payload = chartData;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 580,
+        "wires": [
+            [
+                "e4353b7f786dc2db"
+            ]
+        ]
+    },
+    {
+        "id": "e4353b7f786dc2db",
+        "type": "ui_chart",
+        "z": "e3d79ada6156224f",
+        "name": "3 vrk",
+        "group": "53d8aa653a49137f",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "4vrk",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm",
+        "interpolate": "bezier",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "7",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 650,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "405b81d2d979bb3c",
+        "type": "e-mail",
+        "z": "9bef5ea1018b804f",
+        "d": true,
+        "server": "smtp.gmail.com",
+        "port": "587",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": false,
+        "tls": false,
+        "name": "",
+        "dname": "Lämmitysautomatiikan hälytys",
+        "x": 730,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "89d1e9141a62b173",
+        "type": "inject",
+        "z": "9bef5ea1018b804f",
+        "d": true,
+        "name": "/ 15 min",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "900",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 340,
+        "wires": [
+            [
+                "dec54a26c4d6c45d"
+            ]
+        ]
+    },
+    {
+        "id": "41bc394c8033185f",
+        "type": "ui_template",
+        "z": "9bef5ea1018b804f",
+        "group": "f690cc5791641bf3",
+        "name": "Kasvihuoneen lämpötila",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"card\">\n    <div class=\"card-body\">\n        <p>\n            <b>Kasvihuoneen lämpötila:</b> \n            <span id=\"temperatureValue\">{{msg.payload.temp1.arvo}}</span> °C \n            (<span id=\"trendText\">{{msg.payload.temp1.suunta}}</span>)\n        </p>\n    </div>\n</div>\n\n<style>\n    #trendText {\n        font-weight: bold;\n    }\n    .trend-up {\n        color: green;\n    }\n    .trend-down {\n        color: red;\n    }\n    .trend-stable {\n        color: orange;\n    }\n</style>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(data) {\n            if (data && data.temp1 && data.temp1.suunta) {\n                var trendElement = document.getElementById(\"trendText\");\n                trendElement.classList.remove(\"trend-up\", \"trend-down\", \"trend-stable\");\n\n                if (data.temp1.suunta === \"Nouseva\") {\n                    trendElement.classList.add(\"trend-up\");\n                } else if (data.temp1.suunta === \"Laskeva\") {\n                    trendElement.classList.add(\"trend-down\");\n                } else {\n                    trendElement.classList.add(\"trend-stable\");\n                }\n            }\n        });\n    })(scope);\n</script>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 710,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "12480b46e22c3463",
+        "type": "file",
+        "z": "9bef5ea1018b804f",
+        "name": "",
+        "filename": "Lämpötilat.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1200,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c403d1fdb6855cbf",
+        "type": "inject",
+        "z": "9bef5ea1018b804f",
+        "d": true,
+        "name": "1 min",
+        "props": [],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "x": 90,
+        "y": 140,
+        "wires": [
+            [
+                "fa2a4019a9d49554",
+                "e32a937977d25991",
+                "ae7bc7226b00b42b",
+                "63e2ee5c92d806c1",
+                "d657fe37a0d4a9b1",
+                "19f1dc9eccd46cb8"
+            ]
+        ]
+    },
+    {
+        "id": "join",
+        "type": "join",
+        "z": "9bef5ea1018b804f",
+        "name": "Yhdistä tulokset",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": true,
+        "accumulate": false,
+        "timeout": "10",
+        "count": "5",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 690,
+        "y": 160,
+        "wires": [
+            [
+                "function1"
+            ]
+        ]
+    },
+    {
+        "id": "function1",
+        "type": "function",
+        "z": "9bef5ea1018b804f",
+        "name": "Parsitaan Shelly laitteiden tiedot",
+        "func": "/**\n * © 2025 Ville Kuittinen/Karelia-ammattikorkeakoulu - MIT License - https://opensource.org/licenses/MIT\n * \n * Laitteiden mittausarvojen käsittely- ja valvontasolu (Node-RED function)\n *\n * Tehtävät:\n * 1. Hakee ja käsittelee laitteilta saadut mittaustiedot\n * 2. Arvojen validointi ja rajatarkastus\n * 3. Sisälämpötilan valinta prioriteettijärjestyksessä\n * 4. Arvojen tallennus globaaleihin muuttujiin (file-persistenssillä)\n * 5. 7 vuorokauden historiatiedon ylläpito\n * 6. Laitehavainnoinnin valvonta ja vikahälytykset\n * 7. Virhelokin muodostus\n */\n\nconst expectedDevices = [\"ulkolampotila\", \"kattila\", \"sisalampotila1\", \"sisalampotila2\", \"sisalampotila3\"];\nconst payload = msg.payload;\nconst now = new Date().toISOString();\nconst errorMessages = [];\nconst alertMessages = [];\n\n// 1.1 Aikarajojen määrittely\nconst deviceTimeoutMs = 15 * 60 * 1000; // 15 min\nconst alertIntervalMs = 2 * 60 * 60 * 1000; // 2 h\n\n// 7.1 Virheiden lokitusfunktio\nfunction logError(text) {\n    const entry = `[${now}] ${text}`;\n    errorMessages.push(entry);\n    node.warn(text);\n}\n\n// 2.1 Mittausarvojen validointirajat\nconst limits = {\n    actualBoilerStatus: { min: 0, max: 100 },\n    varaajaYla: { min: 0, max: 100 },\n    varaajaAla: { min: 0, max: 100 },\n    indoorTemp: { min: -10, max: 50 },\n    outdoorTemp: { min: -40, max: 40 }\n};\n\n// 4.1 Haetaan vanhat arvot tiedostosta\nconst old = {\n    actualBoilerStatus: global.get(\"actualBoilerStatus\", \"file\"),\n    indoorTemp: global.get(\"indoorTemp\", \"file\"),\n    outdoorTemp: global.get(\"outdoorTemp\", \"file\"),\n    varaajaYla: global.get(\"varaajaYla\", \"file\"),\n    varaajaAla: global.get(\"varaajaAla\", \"file\")\n};\n\n// 1.2 Päivitetään viimeisin laitteiden data tai käytetään vanhaa\nconst respondedDevices = Object.keys(payload);\nconst oldPayloads = {};\nexpectedDevices.forEach(name => {\n    if (!respondedDevices.includes(name)) {\n        oldPayloads[name] = global.get(\"last_\" + name, \"file\") || {};\n    } else {\n        global.set(\"last_\" + name, payload[name], \"file\");\n        global.set(\"lastSeen_\" + name, Date.now(), \"file\");\n    }\n});\n\n// 2.2 Mittausarvojen tarkistaminen ja virheellisten arvojen (hyppäys) estäminen\nfunction validateTemp(name, value, fallback) {\n    const range = limits[name];\n    if (!range) {\n        logError(`Ei raja-arvoa muuttujalle ${name}, arvo: ${value}`);\n        return value;\n    }\n    if (typeof value !== \"number\" || isNaN(value)) {\n        logError(`${name}: arvo ei kelvollinen numero (${value})`);\n        return fallback;\n    }\n    if (name === \"varaajaAla\") {\n        const maxRise = 5;\n        if (fallback != null && Math.abs(value - fallback) > maxRise) {\n            logError(`${name}: äkillinen hyppy (${fallback} → ${value}) – käytetään edellistä`);\n            return fallback;\n        }\n    }\n    if (value < range.min || value > range.max) {\n        logError(`${name}: arvo epänormaali (${value}), sallitut rajat: ${range.min}…${range.max}`);\n        return fallback;\n    }\n    return value;\n}\n\n// 1.3 Alustetaan muuttujat\nlet actualBoilerStatus = null;\nlet indoorTemp = null;\nlet outdoorTemp = null;\nlet varaajaYla = null;\nlet varaajaAla = null;\n\n// 1.4 Kattilan tietojen käsittely\ntry {\n    const d = payload.kattila || oldPayloads.kattila;\n    if (d) {\n        actualBoilerStatus = validateTemp(\"actualBoilerStatus\", d.input100?.percent, old.actualBoilerStatus);\n        varaajaYla = validateTemp(\"varaajaYla\", d.temperature100?.tC, old.varaajaYla);\n        varaajaAla = validateTemp(\"varaajaAla\", d.temperature101?.tC, old.varaajaAla);\n    }\n} catch (e) { logError(\"Virhe kattila-tiedoissa: \" + e); }\n\n// 1.5 Ulkolämpötilan käsittely\ntry {\n    const d = payload.ulkolampotila || oldPayloads.ulkolampotila;\n    if (d) {\n        outdoorTemp = validateTemp(\"outdoorTemp\", d.temperature100?.tC, old.outdoorTemp);\n    }\n} catch (e) { logError(\"Virhe ulkolämpötilan tiedoissa: \" + e); }\n\n// 3.1 Sisälämpötilan valinta prioriteettijärjestyksellä. Useita antureita, jotka toimivat toistensa varmistuksena.\ntry {\n    const d2 = payload.sisalampotila2;\n    const t2 = d2?.temperature100 ? validateTemp(\"indoorTemp\", d2.temperature100?.tC, null) : null;\n    if (t2 != null) {\n        indoorTemp = t2;\n        global.set(\"lastSeen_sisalampotila2\", Date.now(), \"file\");\n    } else {\n        const d1 = payload.sisalampotila1;\n        const t1 = d1?.temperature100 ? validateTemp(\"indoorTemp\", d1.temperature100?.tC, null) : null;\n        if (t1 != null) {\n            indoorTemp = t1;\n            global.set(\"lastSeen_sisalampotila1\", Date.now(), \"file\");\n        } else {\n            const d3 = payload.sisalampotila3;\n            const t3 = d3?.temperature100 ? validateTemp(\"indoorTemp\", d3.temperature100?.tC, null) : null;\n            if (t3 != null) {\n                indoorTemp = t3;\n                global.set(\"lastSeen_sisalampotila3\", Date.now(), \"file\");\n            } else {\n                logError(\"Sisälämpötilaa ei saatu mistään laitteesta\");\n            }\n        }\n    }\n} catch (e) { logError(\"Virhe sisälämpötilan valinnassa: \" + e); }\n\n// 4.2 Tallennetaan globaalit muuttujat\nglobal.set(\"actualBoilerStatus\", actualBoilerStatus, \"file\");\nglobal.set(\"indoorTemp\", indoorTemp, \"file\");\nglobal.set(\"outdoorTemp\", outdoorTemp, \"file\");\nglobal.set(\"varaajaYla\", varaajaYla, \"file\");\nglobal.set(\"varaajaAla\", varaajaAla, \"file\");\n\n// 5.1 Päivitetään 7 päivän historiatiedot\nlet history = global.get(\"history\", \"file\") || [];\nlet measurement = {\n    timestamp: now,\n    actualBoilerStatus,\n    indoorTemp,\n    outdoorTemp,\n    varaajaYla,\n    varaajaAla\n};\nhistory.push(measurement);\nhistory = history.filter(entry => new Date(entry.timestamp).getTime() >= Date.now() - 7 * 24 * 60 * 60 * 1000);\nglobal.set(\"history\", history, \"file\");\n\n// 6.1 Laitehavainnointi ja vikahälytykset\nexpectedDevices.forEach(name => {\n    const lastSeen = global.get(\"lastSeen_\" + name, \"file\") || 0;\n    if (Date.now() - lastSeen > deviceTimeoutMs) {\n        alertMessages.push(`${name}: ei vastannut ${Math.round((Date.now() - lastSeen) / 60000)} minuuttiin`);\n    }\n});\n\nlet lastAlertSent = global.get(\"lastAlertSent\", \"file\") || 0;\nlet nowMs = Date.now();\nlet sendAlertNow = false;\n\nif (alertMessages.length > 0 && (nowMs - lastAlertSent > alertIntervalMs)) {\n    sendAlertNow = true;\n    global.set(\"lastAlertSent\", nowMs, \"file\");\n}\n\n// 7.2 Palautetaan viestit seuraaville solmuille\nreturn [\n    {\n        payload: errorMessages.join(\"\\n\"),\n        filename: \"Laiteloki.txt\",\n        appendNewline: true,\n        complete: true\n    },\n    { payload: measurement },\n    {\n        payload: sendAlertNow\n            ? {\n                subject: \"Laitteita ei vastaa\",\n                body: \"Seuraavat laitteet eivät ole vastanneet:\\n\" + alertMessages.join(\"\\n\")\n            }\n            : null\n    }\n];\n",
+        "outputs": 3,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 160,
+        "wires": [
+            [
+                "37aa2c1433a33015"
+            ],
+            [
+                "12480b46e22c3463"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "37aa2c1433a33015",
+        "type": "file",
+        "z": "9bef5ea1018b804f",
+        "name": "",
+        "filename": "Laitevirheet_loki.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1210,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b48a3b840173a6cd",
+        "type": "comment",
+        "z": "9bef5ea1018b804f",
+        "name": "Ohjattavien laitteiden tilatiedot ja mitattavat lämpötilat",
+        "info": "",
+        "x": 240,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "fa2a4019a9d49554",
+        "type": "shelly-gen2",
+        "z": "9bef5ea1018b804f",
+        "d": true,
+        "hostname": "192.168.xxx.xxx",
+        "description": "sisalampotila1",
+        "mode": "polling",
+        "verbose": false,
+        "server": "",
+        "outputmode": "event",
+        "uploadretryinterval": 5000,
+        "pollinginterval": 5000,
+        "pollstatus": false,
+        "getstatusoncommand": true,
+        "devicetype": "S3SW-001P16EU",
+        "devicetypemustmatchexactly": true,
+        "captureblutooth": false,
+        "outputs": 1,
+        "x": 320,
+        "y": 80,
+        "wires": [
+            [
+                "531f58642c96ddc7"
+            ]
+        ]
+    },
+    {
+        "id": "d657fe37a0d4a9b1",
+        "type": "shelly-gen2",
+        "z": "9bef5ea1018b804f",
+        "d": true,
+        "hostname": "192.168.xxx.xxx",
+        "description": "ulkolampotila",
+        "mode": "polling",
+        "verbose": false,
+        "server": "",
+        "outputmode": "event",
+        "uploadretryinterval": 5000,
+        "pollinginterval": 5000,
+        "pollstatus": false,
+        "getstatusoncommand": true,
+        "devicetype": "S3DM-0010WW",
+        "devicetypemustmatchexactly": true,
+        "captureblutooth": false,
+        "outputs": 1,
+        "x": 310,
+        "y": 240,
+        "wires": [
+            [
+                "48b0e38da0783c51"
+            ]
+        ]
+    },
+    {
+        "id": "63e2ee5c92d806c1",
+        "type": "shelly-gen2",
+        "z": "9bef5ea1018b804f",
+        "d": true,
+        "hostname": "192.168.xxx.xxx",
+        "description": "kattila",
+        "mode": "polling",
+        "verbose": false,
+        "server": "",
+        "outputmode": "event",
+        "uploadretryinterval": 5000,
+        "pollinginterval": 5000,
+        "pollstatus": false,
+        "getstatusoncommand": true,
+        "devicetype": "S3DM-0010WW",
+        "devicetypemustmatchexactly": true,
+        "captureblutooth": false,
+        "outputs": 1,
+        "x": 290,
+        "y": 200,
+        "wires": [
+            [
+                "d0373bf20f486224"
+            ]
+        ]
+    },
+    {
+        "id": "e32a937977d25991",
+        "type": "shelly-gen2",
+        "z": "9bef5ea1018b804f",
+        "d": true,
+        "hostname": "192.168.xxx.xxx",
+        "description": "sisalampotila2",
+        "mode": "polling",
+        "verbose": false,
+        "server": "",
+        "outputmode": "event",
+        "uploadretryinterval": 5000,
+        "pollinginterval": 5000,
+        "pollstatus": false,
+        "getstatusoncommand": true,
+        "devicetype": "S3SW-001P16EU",
+        "devicetypemustmatchexactly": true,
+        "captureblutooth": false,
+        "outputs": 1,
+        "x": 320,
+        "y": 120,
+        "wires": [
+            [
+                "82ca3189d4ac6100"
+            ]
+        ]
+    },
+    {
+        "id": "ae7bc7226b00b42b",
+        "type": "shelly-gen2",
+        "z": "9bef5ea1018b804f",
+        "d": true,
+        "hostname": "192.168.xxx.xxx",
+        "description": "sisalampotila3",
+        "mode": "polling",
+        "verbose": false,
+        "server": "",
+        "outputmode": "event",
+        "uploadretryinterval": 5000,
+        "pollinginterval": 5000,
+        "pollstatus": false,
+        "getstatusoncommand": true,
+        "devicetype": "S3SW-001P16EU",
+        "devicetypemustmatchexactly": true,
+        "captureblutooth": false,
+        "outputs": 1,
+        "x": 320,
+        "y": 160,
+        "wires": [
+            [
+                "619637a14f831982"
+            ]
+        ]
+    },
+    {
+        "id": "82ca3189d4ac6100",
+        "type": "function",
+        "z": "9bef5ea1018b804f",
+        "name": "Topic",
+        "func": "msg.topic=\"sisalampotila2\";\nreturn msg;",
+        "outputs": 1,
+        "x": 490,
+        "y": 120,
+        "wires": [
+            [
+                "join"
+            ]
+        ]
+    },
+    {
+        "id": "d0373bf20f486224",
+        "type": "function",
+        "z": "9bef5ea1018b804f",
+        "name": "Topic",
+        "func": "msg.topic=\"kattila\";\nreturn msg;",
+        "outputs": 1,
+        "x": 490,
+        "y": 200,
+        "wires": [
+            [
+                "join"
+            ]
+        ]
+    },
+    {
+        "id": "48b0e38da0783c51",
+        "type": "function",
+        "z": "9bef5ea1018b804f",
+        "name": "Topic",
+        "func": "msg.topic=\"ulkolampotila\";\nreturn msg;",
+        "outputs": 1,
+        "x": 490,
+        "y": 240,
+        "wires": [
+            [
+                "join"
+            ]
+        ]
+    },
+    {
+        "id": "531f58642c96ddc7",
+        "type": "function",
+        "z": "9bef5ea1018b804f",
+        "name": "Topic",
+        "func": "msg.topic=\"sisalampotila1\";\nreturn msg;",
+        "outputs": 1,
+        "x": 490,
+        "y": 80,
+        "wires": [
+            [
+                "join"
+            ]
+        ]
+    },
+    {
+        "id": "619637a14f831982",
+        "type": "function",
+        "z": "9bef5ea1018b804f",
+        "name": "Topic",
+        "func": "msg.topic=\"sisalampotila3\";\nreturn msg;",
+        "outputs": 1,
+        "x": 490,
+        "y": 160,
+        "wires": [
+            [
+                "join"
+            ]
+        ]
+    },
+    {
+        "id": "dec54a26c4d6c45d",
+        "type": "function",
+        "z": "9bef5ea1018b804f",
+        "name": "Sisälämpötilan tarkistus ja hälytys",
+        "func": "/*\n * © 2025 Ville Kuittinen/Karelia-ammattikorkeakoulu - MIT License - https://opensource.org/licenses/MIT\n * \n * Tämä solmu tarkistaa sisälämpötilan ja laukaisee hälytyksen tarvittaessa.\n *\n * Tehtävät:\n * 1. Haetaan uusin sisälämpötilalukema historiasta\n * 2. Analysoidaan lämpötilan kehityssuunta (laskeva, vakaa, nouseva)\n * 3. Tarkistetaan onko kriittinen lämpötilaraja alittunut\n * 4. Lähetetään hälytysviesti tarvittaessa\n * 5. Päivitetään UI lämpötilatiedoilla\n */\n\n// 1.1 Haetaan kriittinen lämpötilaraja\nlet criticalTemperature = global.get(\"kriittinenLampotila\", \"file\") || 10;\nlet alaraja1 = criticalTemperature;\nlet alertInterval = 2 * 60 * 60 * 1000; // 2h\n\n// 1.2 Haetaan lämpötilahistoria\nlet history = global.get(\"history\", \"file\") || [];\nlet temp1 = history.length > 0 ? history[history.length - 1].indoorTemp : undefined;\n\nif (temp1 === undefined || temp1 === null) {\n    node.status({ fill: \"yellow\", shape: \"ring\", text: \"Lämpötilalukema puuttuu\" });\n    return [null, { payload: { temp1: { arvo: temp1, alaraja: alaraja1, suunta: \"Ei tietoa\" } } }];\n}\n\n// 2.1 Analysoidaan lämpötilan kehityssuunta\nlet temp1History = history.map(entry => entry.indoorTemp);\n\nfunction getTrendText(history) {\n    if (history.length < 3) return \"Ei tietoa\";\n\n    let recent = history.slice(-3);\n    let diffs = recent.map((val, idx, arr) => (idx > 0 ? val - arr[idx - 1] : 0)).slice(1);\n\n    let increases = diffs.filter(x => x > 0).length;\n    let decreases = diffs.filter(x => x < 0).length;\n\n    if (decreases >= 2) return \"Laskeva\";\n    if (increases >= 2) return \"Nouseva\";\n    return \"Vakaa\";\n}\n\nlet trend1 = getTrendText(temp1History);\n\n// 5.1 Valmistellaan UI-viesti\nlet uiPayload = { temp1: { arvo: temp1, alaraja: alaraja1, suunta: trend1 } };\n\n// 3.1 Haetaan edellisen hälytyksen aikaleima\nlet lastAlertTime = global.get(\"lastAlertTime\", \"file\") || 0;\nlet currentTime = Date.now();\n\n// 4.1 Tarkistetaan hälytyksen ehdot\nif (temp1 < alaraja1 && (trend1 === \"Laskeva\" || trend1 === \"Vakaa\") && (currentTime - lastAlertTime >= alertInterval)) {\n    const timestamp = new Date().toLocaleTimeString('fi-FI', { hour: '2-digit', minute: '2-digit' });\n    let alertMsg = {\n        payload: `Sisälämpötila (${temp1}°C) on laskenut alle hälytysrajan (${alaraja1}°C).\\n\\nViesti lähetetty klo ${timestamp}.`,\n        topic: \"Sisälämpötilahälytys\"\n    };\n\n    global.set(\"lastAlertTime\", currentTime, \"file\");\n    node.status({ fill: \"red\", shape: \"dot\", text: \"Lähetetään hälytys\" });\n    return [alertMsg, { payload: uiPayload }];\n} else {\n    node.status({ fill: \"green\", shape: \"ring\", text: \"Ei hälytyksiä\" });\n    return [null, { payload: uiPayload }];\n}",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 340,
+        "wires": [
+            [
+                "405b81d2d979bb3c"
+            ],
+            [
+                "41bc394c8033185f"
+            ]
+        ]
+    },
+    {
+        "id": "19f1dc9eccd46cb8",
+        "type": "function",
+        "z": "9bef5ea1018b804f",
+        "name": "Kattilan ylikuumenemissuojan tarkistus",
+        "func": "/*\n * © 2025 Ville Kuittinen/Karelia-ammattikorkeakoulu - MIT License - https://opensource.org/licenses/MIT\n * \n * Tämä solmu tarkistaa kattilan reagoinnin ohjauspäätökseen ja hälyttää mahdollisesta ylikuumenemissuojan laukeamisesta.\n *\n * Tehtävät:\n * 1. Haetaan viimeisin ohjauspäätös ja kattilan toteutunut teho\n * 2. Tarkistetaan, onko kattila reagoinut odotetusti\n * 3. Hälytetään, jos teho ei ole noussut sallitussa ajassa\n */\n\n// 1.1 Haetaan tilatiedot\nconst target = global.get(\"lastDecisionPower\", \"file\");\nconst actual = global.get(\"actualBoilerStatus\", \"file\");\nconst timestamp = global.get(\"lastDecisionTime\", \"file\") || 0;\nconst now = Date.now();\n\n// 1.2 Määritetään suurin sallittu viive reaktiolle\nconst maxAllowedDelay = 5 * 60 * 1000; // 5 minuuttia\n\n// 2.1 Tarkistetaan tilanne\nif (target >= 55 && actual < 15 && (now - timestamp) > maxAllowedDelay) {\n    const minutesPassed = Math.round((now - timestamp) / 60000);\n\n    return {\n        payload:\n            `Kattila ei vastaa ohjaukseen!\\n` +\n            `Mahdollinen ylikuumenemissuoja laukeaminen.\\n\\n` +\n            `Haluttu teho: ${target} %\\n` +\n            `Toteutunut teho: ${actual} %\\n` +\n            `Tehopäätöksestä kulunut: ${minutesPassed} minuuttia\\n`\n    };\n}\n\n// 3.1 Muulloin ei lähetetä viestiä\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 300,
+        "wires": [
+            [
+                "405b81d2d979bb3c"
+            ]
+        ]
+    }
+]
