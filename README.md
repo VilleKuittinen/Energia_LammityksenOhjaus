@@ -1,6 +1,5 @@
 Energia* on Karelia-ammattikorkeakoulun Älykkäät energiayhteisöt -hankkeen tuottama lämmityksen ohjausjärjestelmä.
 
-© 2025 Ville Kuittinen/Karelia-ammattikorkeakoulu - MIT License - https://opensource.org/licenses/MIT
 
 Tervetuloa käyttämään Energia* järjestelmää. Tämä dokumentti kertoo, mitä tarvitaan ja miten saat kaiken toimimaan Node-RED:issä.
 A. Node-RED Asennus
@@ -32,3 +31,6 @@ D. Vianmääritys
 - Node-RED ei käynnisty: tarkista Node.js-asennus ja settings.js.
 - Shelly-laitteet eivät yhdistä: tarkista IP:t ja verkko.
 - Aikaleimat väärin: varmista moment-asennus ja aikavyöhyke.
+
+
+© 2025 Ville Kuittinen/Karelia-ammattikorkeakoulu - MIT License - https://opensource.org/licenses/MIT
