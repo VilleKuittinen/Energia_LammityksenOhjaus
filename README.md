@@ -1,4 +1,6 @@
 Energia* on Karelia-ammattikorkeakoulun Älykkäät energiayhteisöt -hankkeen tuottama lämmityksen ohjausjärjestelmä.
+Hanke on Euroopan unionin osarahoittama (https://www.karelia.fi/projektit/alykkaat-energiayhteisot/).
+
 
 Projektin sisältö
 - Node-RED -flowt lämmityksen, virheiden ja hintatiedon hallintaan
