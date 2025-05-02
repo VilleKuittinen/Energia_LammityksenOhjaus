@@ -2,13 +2,14 @@ Energia* on Karelia-ammattikorkeakoulun Älykkäät energiayhteisöt -hankkeen t
 Hanke on Euroopan unionin osarahoittama (https://www.karelia.fi/projektit/alykkaat-energiayhteisot/).
 
 
-Projektin sisältö
+ Sisältö
 - Node-RED -flowt lämmityksen, virheiden ja hintatiedon hallintaan
 - Dashboard (UI) käyttöliittymä hintojen ja päätösten visualisointiin
 - Virheiden keräys ja tallennus CSV-tiedostoksi
 - Valmiit tukikoodit ja asennusohjeet
 
 Tervetuloa käyttämään Energia* järjestelmää. Tämä dokumentti kertoo, mitä tarvitaan ja miten saat kaiken toimimaan Node-RED:issä.
+
 A. Node-RED Asennus
 - Asenna Node.js virallisilta sivuilta: https://nodejs.org/
 - Tarkista versiot: node -v ja npm -v
